@@ -20,3 +20,22 @@ function awesome_theme_setup() {
 }
 
 add_action('init', 'awesome_theme_setup');
+
+function wpb_pages() {
+    $childArgs = array(
+        'child_of'     => 0,
+        'sort_order'   => 'ASC',
+        'sort_column'  => 'menu_order', 
+        'parent'       => -1, 
+        'post_type'    => 'page',
+        'post_status'  => 'publish',
+    );
+    $list = get_pages($childArgs);
+    foreach ($list as $page) {
+        echo '<section id="'.$page->post_name.'" class="section">';
+        echo $page->post_title;
+        echo apply_filters( 'the_content', $page->post_content);
+        echo '</section>';
+    }
+}
+add_action('wpb_pages', 'wpb_pages');
