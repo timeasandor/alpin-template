@@ -1,7 +1,7 @@
 <?php 
 	
 /*
-	Template Name: Template About
+	Template Name: Template About not in use
 */
 	
 get_header(); ?>

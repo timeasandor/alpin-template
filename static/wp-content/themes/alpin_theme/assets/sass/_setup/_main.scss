@@ -6,6 +6,7 @@ html {
   overflow-y:scroll;
 }
 body {
+  height: 100%;
   @include fontNormal();
   font-size: 1em;
   line-height: 1.35;
@@ -143,12 +144,12 @@ h2 {
   margin:0 auto;
   overflow:hidden;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: $for_bootstrap_sm) {
   .hidden-xs {
     display:none;
   }
 }
-@media only screen and (max-width: $for_mobile) {
+@media only screen and (max-width: $for_bootstrap_xs) {
   .main_pt75 {
     padding-top:50px;
   }

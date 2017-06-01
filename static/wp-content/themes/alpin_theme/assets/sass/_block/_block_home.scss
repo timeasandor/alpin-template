@@ -1,0 +1,123 @@
+#home {
+
+  height: 100%;
+  width: 100%;
+  background-color: #26819c;
+  position: relative;
+
+  .navbar {
+    //height: 80px;
+  }
+
+  .logo {
+    margin-top: 20px;
+  }
+  .menu {
+
+    ul {
+      list-style: none;
+      margin-top: 35px;
+
+      li {
+        display: inline-block;
+        float: left;
+
+        a {
+          display: block;
+          @include fontBrand();
+          font-weight: bold;
+          text-transform: uppercase;
+          font-size: 1.2em;
+          color: $colorText;
+          margin-right: 20px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .intro-text {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    top: 50%;
+    bottom: auto;
+    margin: 0 auto;
+    @include transform(translateY(-50%));
+    max-width: 1284px;
+  }
+  #site-header-main {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    z-index: 101;
+    width: 100%;
+    margin: 0 auto;
+    vertical-align: top;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+    background-color: #26819c;
+
+    &.header-fixed {
+      background-color: #ffffff;
+      box-shadow: 0 0 3px rgba(0,0,0,0.2);
+      -webkit-transition: .25s background-color ease-in-out;
+      transition: .25s background-color ease-in-out;
+
+      a {
+        color: #495d6d;
+
+        &:hover {
+          color: #24a7cf;
+        }
+      }
+      .socials {
+        a {
+          &:hover {
+            &:first-of-type {
+              color: #3B5998;
+            }
+            &:nth-of-type(2){
+              color: #00aced;
+            }
+            &:nth-of-type(3){
+              color: #d34836;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.socials {
+  margin-top: 35px;
+
+  a {
+    display: block;
+    float: left;
+    position: relative;
+    z-index: 99;
+    overflow: hidden;
+    padding: 0 .7em;
+    @include fontSocials();
+    color: $colorText;
+    text-decoration: none;
+    @include transform(rotateY(0deg));
+    font-size: 1.2em;
+    font-weight: bold;
+
+    &:hover {
+      @include transform(rotateY(-180deg));
+      //color: yellow;
+      &:first-of-type {
+        color: #3B5998;
+      }
+      &:nth-of-type(2){
+        color: #00aced;
+      }
+      &:nth-of-type(3){
+        color: #d34836;
+      }
+    }
+  }
+}

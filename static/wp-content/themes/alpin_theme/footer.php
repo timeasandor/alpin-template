@@ -1,6 +1,12 @@
 <footer>
     <p>This is my footer</p>
-    <?php wp_nav_menu(array('theme_location'=>'secondary')); ?>
+
+
+
+    <div id="toTop" class="toTop-show">
+        <i class="icon-back2top"></i>
+    </div>
+
 </footer>
 
 <?php wp_footer(); ?>

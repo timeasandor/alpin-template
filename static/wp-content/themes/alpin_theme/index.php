@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php
+
+/*
+	Template Name: Template One Pager
+*/
+
+get_header(); ?>
 
 <?php
 
@@ -6,14 +12,19 @@
 
 		while( have_posts() ): the_post(); ?>
 
-<h3><?php the_title(); ?></h3>
-<small>Posted on: <?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?>, in <?php the_category(); ?></small>
+		<?php get_template_part('template_parts/home'); ?>
 
-<p><?php the_content(); ?></p>
+		<?php get_template_part('template_parts/about'); ?>
 
-<hr>
+		<?php get_template_part('template_parts/services'); ?>
 
-<?php endwhile;
+		<?php get_template_part('template_parts/gallery'); ?>
+
+		<?php get_template_part('template_parts/contact'); ?>
+
+		<p><?php the_content(); ?></p>
+
+		<?php endwhile;
 
 	endif;
 
