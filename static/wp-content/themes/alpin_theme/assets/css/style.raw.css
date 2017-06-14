@@ -343,7 +343,7 @@ a.f_btn,
 	border-radius: 5px;
 	font-size: 1em;
 	padding: 0 1em;
-	background: #c11a2c;
+	background: #8e8e8e;
 	color: #ffffff;
 	border: 0;
 	height: 42px;
@@ -1218,50 +1218,223 @@ th {
 	margin-left: 100%;
 }
 
+/* line 1, ../sass/_block/_block_services.scss */
+
+#services {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+/* line 6, ../sass/_block/_block_services.scss */
+
+#services .lp-block {
+	color: #8e8e8e;
+	padding: 20px 0;
+}
+
+/* line 11, ../sass/_block/_block_services.scss */
+
+#services .lp-block i:before {
+	color: #24a7cf;
+	font-size: 35px;
+}
+
+/* line 15, ../sass/_block/_block_services.scss */
+
+#services .lp-block i:before:hover {
+	color: #8e8e8e;
+}
+
+/* line 20, ../sass/_block/_block_services.scss */
+
+#services .lp-block .lp-block-title {
+	text-transform: uppercase;
+	font-size: 1.1em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	font-weight: bold;
+}
+
+/* line 26, ../sass/_block/_block_services.scss */
+
+#services .lp-block .lp-block-title:hover {
+	color: #24a7cf;
+}
+
+/* line 31, ../sass/_block/_block_services.scss */
+
+#services .text-title {
+	color: #8e8e8e;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 2em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	font-weight: bold;
+}
+
 /* line 1, ../sass/_block/_block_home.scss */
 
 #home {
 	height: 100%;
 	width: 100%;
-	background-color: #26819c;
+	background-image: url("../images/narlukada-alpin.png");
+	background-repeat: no-repeat;
 	position: relative;
+	overflow: hidden;
 }
 
-/* line 12, ../sass/_block/_block_home.scss */
+/* line 10, ../sass/_block/_block_home.scss */
+
+#home img {
+	width: 100%;
+	height: 100%;
+}
+
+/* line 19, ../sass/_block/_block_home.scss */
 
 #home .logo {
-	margin-top: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
-/* line 17, ../sass/_block/_block_home.scss */
+/* line 23, ../sass/_block/_block_home.scss */
 
-#home .menu ul {
+#home .logo img {
+	width: 100%;
+	height: auto;
+	max-width: 150px;
+}
+
+/* line 31, ../sass/_block/_block_home.scss */
+
+#home .menu-desktop ul {
 	list-style: none;
 	margin-top: 35px;
 }
 
-/* line 21, ../sass/_block/_block_home.scss */
+/* line 35, ../sass/_block/_block_home.scss */
 
-#home .menu ul li {
+#home .menu-desktop ul li {
 	display: inline-block;
 	float: left;
 }
 
-/* line 25, ../sass/_block/_block_home.scss */
+/* line 39, ../sass/_block/_block_home.scss */
 
-#home .menu ul li a {
+#home .menu-desktop ul li a {
 	display: block;
-	font-family: 'FlamaCondensed-Medium', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
-	font-weight: bold;
+	font-weight: 600;
 	text-transform: uppercase;
-	font-size: 1.2em;
+	font-size: 1em;
 	color: #fcfff3;
-	margin-right: 20px;
+	margin-right: 40px;
 	text-decoration: none;
 }
 
-/* line 38, ../sass/_block/_block_home.scss */
+/* line 60, ../sass/_block/_block_home.scss */
+
+#home #mobile-menu {
+	display: none;
+	position: relative;
+	z-index: 999999;
+	overflow-y: auto;
+	overflow-x: hidden;
+	top: -90px;
+	left: -100%;
+	right: 0;
+	bottom: 0;
+	line-height: 2em;
+	width: 100%;
+	height: 70%;
+	padding: 2em;
+	background-color: #ffffff;
+}
+
+/* line 76, ../sass/_block/_block_home.scss */
+
+#home #mobile-menu #nav-cancel {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: inline-block;
+	width: auto;
+	height: 2em;
+	margin-top: 25px;
+	padding: 0 1em;
+	cursor: pointer;
+	font-size: 24px;
+	line-height: 2;
+}
+
+/* line 90, ../sass/_block/_block_home.scss */
+
+#home #mobile-menu #nav-cancel .icon-cancel:before {
+	color: #666666;
+}
+
+/* line 96, ../sass/_block/_block_home.scss */
+
+#home .menu-mob {
+	max-width: 340px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* line 103, ../sass/_block/_block_home.scss */
+
+#home .menu-mob ul li {
+	list-style: none;
+}
+
+/* line 106, ../sass/_block/_block_home.scss */
+
+#home .menu-mob ul li a {
+	text-decoration: none;
+	color: #666666;
+}
+
+/* line 110, ../sass/_block/_block_home.scss */
+
+#home .menu-mob ul li a:hover {
+	color: #24a7cf;
+}
+
+/* line 117, ../sass/_block/_block_home.scss */
+
+#home #nav-toggle {
+	display: none;
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0 1em;
+	font-size: 24px;
+	cursor: pointer;
+	height: 85px;
+	line-height: 85px;
+	color: #24a7cf;
+}
+
+/* line 132, ../sass/_block/_block_home.scss */
+
+#home #nav-toggle span:before {
+	content: "\e871";
+	font-size: 24px;
+	font-family: 'fluida-blocks', sans-serif;
+	font-weight: normal;
+}
+
+/* line 139, ../sass/_block/_block_home.scss */
+
+#home #nav-toggle:hover {
+	color: #8d8d8d;
+}
+
+/* line 144, ../sass/_block/_block_home.scss */
 
 #home .intro-text {
 	position: absolute;
@@ -1278,67 +1451,83 @@ th {
 	max-width: 1284px;
 }
 
-/* line 49, ../sass/_block/_block_home.scss */
+/* line 155, ../sass/_block/_block_home.scss */
+
+#home .intro-text h1 {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+}
+
+/* line 164, ../sass/_block/_block_home.scss */
 
 #home #site-header-main {
 	display: inline-block;
 	position: fixed;
 	top: 0;
+	left: 0;
 	z-index: 101;
 	width: 100%;
 	margin: 0 auto;
 	vertical-align: top;
 	-webkit-transition: all .2s linear;
 	transition: all .2s linear;
-	background-color: #26819c;
 }
 
-/* line 61, ../sass/_block/_block_home.scss */
+/* line 176, ../sass/_block/_block_home.scss */
 
 #home #site-header-main.header-fixed {
 	background-color: #ffffff;
 	box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 	-webkit-transition: .25s background-color ease-in-out;
 	transition: .25s background-color ease-in-out;
+	border-bottom: 1px solid #444;
 }
 
-/* line 67, ../sass/_block/_block_home.scss */
+/* line 183, ../sass/_block/_block_home.scss */
 
 #home #site-header-main.header-fixed a {
 	color: #495d6d;
 }
 
-/* line 70, ../sass/_block/_block_home.scss */
+/* line 186, ../sass/_block/_block_home.scss */
 
 #home #site-header-main.header-fixed a:hover {
 	color: #24a7cf;
 }
 
-/* line 77, ../sass/_block/_block_home.scss */
+/* line 193, ../sass/_block/_block_home.scss */
 
 #home #site-header-main.header-fixed .socials a:hover:first-of-type {
 	color: #3B5998;
 }
 
-/* line 80, ../sass/_block/_block_home.scss */
+/* line 196, ../sass/_block/_block_home.scss */
 
 #home #site-header-main.header-fixed .socials a:hover:nth-of-type(2) {
 	color: #00aced;
 }
 
-/* line 83, ../sass/_block/_block_home.scss */
+/* line 199, ../sass/_block/_block_home.scss */
 
 #home #site-header-main.header-fixed .socials a:hover:nth-of-type(3) {
 	color: #d34836;
 }
 
-/* line 92, ../sass/_block/_block_home.scss */
+/* line 209, ../sass/_block/_block_home.scss */
+
+.noscroll {
+	overflow: hidden;
+}
+
+/* line 213, ../sass/_block/_block_home.scss */
 
 .socials {
 	margin-top: 35px;
 }
 
-/* line 95, ../sass/_block/_block_home.scss */
+/* line 216, ../sass/_block/_block_home.scss */
 
 .socials a {
 	display: block;
@@ -1351,39 +1540,45 @@ th {
 	font-weight: normal;
 	color: #fcfff3;
 	text-decoration: none;
-	-moz-transform: rotateY(0deg);
-	-ms-transform: rotateY(0deg);
-	-webkit-transform: rotateY(0deg);
-	transform: rotateY(0deg);
-	font-size: 1.2em;
+	font-size: 1em;
 	font-weight: bold;
 }
 
-/* line 109, ../sass/_block/_block_home.scss */
-
-.socials a:hover {
-	-moz-transform: rotateY(-180deg);
-	-ms-transform: rotateY(-180deg);
-	-webkit-transform: rotateY(-180deg);
-	transform: rotateY(-180deg);
-}
-
-/* line 112, ../sass/_block/_block_home.scss */
+/* line 230, ../sass/_block/_block_home.scss */
 
 .socials a:hover:first-of-type {
 	color: #3B5998;
 }
 
-/* line 115, ../sass/_block/_block_home.scss */
+/* line 233, ../sass/_block/_block_home.scss */
 
 .socials a:hover:nth-of-type(2) {
 	color: #00aced;
 }
 
-/* line 118, ../sass/_block/_block_home.scss */
+/* line 236, ../sass/_block/_block_home.scss */
 
 .socials a:hover:nth-of-type(3) {
 	color: #d34836;
+}
+
+/* line 1, ../sass/_block/_block_about.scss */
+
+#about {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+/* line 6, ../sass/_block/_block_about.scss */
+
+#about .text-title {
+	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
@@ -2381,6 +2576,29 @@ th {
 
 .col-lg-offset-12 {
 	margin-left: 100%;
+}
+
+}
+
+@media only screen and (max-width: 992px) {
+
+/* line 244, ../sass/_block/_block_home.scss */
+
+#home #nav-toggle {
+	display: block;
+}
+
+/* line 247, ../sass/_block/_block_home.scss */
+
+#home .menu-desktop {
+	display: none;
+}
+
+/* line 251, ../sass/_block/_block_home.scss */
+
+#home #site-header-main {
+	background-color: #ffffff;
+	border-bottom: 1px solid #8e8e8e;
 }
 
 }

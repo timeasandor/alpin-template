@@ -1,0 +1,39 @@
+#services {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  .lp-block {
+    color: $colorBrand;
+    padding: 20px 0;
+    
+    i {
+      &:before {
+        color: $colorBrandHighlight;
+        font-size: 35px;
+
+        &:hover {
+          color: $colorBrand;
+        }
+      }
+    }
+    .lp-block-title {
+      text-transform: uppercase;
+      font-size: 1.1em;
+      @include fontLight();
+      font-weight: bold;
+
+      &:hover {
+        color: $colorBrandHighlight;
+      }
+    }
+  }
+  .text-title {
+    color: $colorBrand;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+    @include fontLight();
+    font-weight: bold;
+  }
+}
