@@ -1,7 +1,21 @@
+
+<?php
+
+// Exit if accessed directly
+if( !defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+/**
+ * Footer Template
+ *
+ * @file footer.php
+ *
+ */
+?>
 <footer>
-    <p>This is my footer</p>
 
-
+    <?php get_template_part( 'template-parts/footer/site', 'info' ); ?>
 
     <div id="toTop" class="toTop-show">
         <i class="icon-back2top"></i>

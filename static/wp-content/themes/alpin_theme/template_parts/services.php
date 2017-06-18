@@ -6,12 +6,9 @@
 ?>
 
 
-<section id="services">
+<section id="services" class="main_pt50 main_pb50">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12">
-                <div class="text-title main_pt30 main_pb30">Services</div>
-            </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="lp-block">
                     <i class="blicon-layers2"></i>

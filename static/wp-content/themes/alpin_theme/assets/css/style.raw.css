@@ -1222,31 +1222,30 @@ th {
 
 #services {
 	width: 100%;
-	height: 100%;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
-/* line 6, ../sass/_block/_block_services.scss */
+/* line 5, ../sass/_block/_block_services.scss */
 
 #services .lp-block {
-	color: #8e8e8e;
+	color: #495d6d;
 	padding: 20px 0;
 }
 
-/* line 11, ../sass/_block/_block_services.scss */
+/* line 10, ../sass/_block/_block_services.scss */
 
 #services .lp-block i:before {
 	color: #24a7cf;
 	font-size: 35px;
 }
 
-/* line 15, ../sass/_block/_block_services.scss */
+/* line 14, ../sass/_block/_block_services.scss */
 
 #services .lp-block i:before:hover {
-	color: #8e8e8e;
+	color: #495d6d;
 }
 
-/* line 20, ../sass/_block/_block_services.scss */
+/* line 19, ../sass/_block/_block_services.scss */
 
 #services .lp-block .lp-block-title {
 	text-transform: uppercase;
@@ -1256,16 +1255,16 @@ th {
 	font-weight: bold;
 }
 
-/* line 26, ../sass/_block/_block_services.scss */
+/* line 25, ../sass/_block/_block_services.scss */
 
 #services .lp-block .lp-block-title:hover {
 	color: #24a7cf;
 }
 
-/* line 31, ../sass/_block/_block_services.scss */
+/* line 30, ../sass/_block/_block_services.scss */
 
 #services .text-title {
-	color: #8e8e8e;
+	color: #495d6d;
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 2em;
@@ -1285,45 +1284,45 @@ th {
 	overflow: hidden;
 }
 
-/* line 10, ../sass/_block/_block_home.scss */
+/* line 12, ../sass/_block/_block_home.scss */
 
-#home img {
+img {
 	width: 100%;
 	height: 100%;
 }
 
-/* line 19, ../sass/_block/_block_home.scss */
+/* line 21, ../sass/_block/_block_home.scss */
 
-#home .logo {
+.logo {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
-/* line 23, ../sass/_block/_block_home.scss */
+/* line 25, ../sass/_block/_block_home.scss */
 
-#home .logo img {
+.logo img {
 	width: 100%;
 	height: auto;
 	max-width: 150px;
 }
 
-/* line 31, ../sass/_block/_block_home.scss */
+/* line 33, ../sass/_block/_block_home.scss */
 
-#home .menu-desktop ul {
+.menu-desktop ul {
 	list-style: none;
 	margin-top: 35px;
 }
 
-/* line 35, ../sass/_block/_block_home.scss */
+/* line 37, ../sass/_block/_block_home.scss */
 
-#home .menu-desktop ul li {
+.menu-desktop ul li {
 	display: inline-block;
 	float: left;
 }
 
-/* line 39, ../sass/_block/_block_home.scss */
+/* line 41, ../sass/_block/_block_home.scss */
 
-#home .menu-desktop ul li a {
+.menu-desktop ul li a {
 	display: block;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
@@ -1335,9 +1334,9 @@ th {
 	text-decoration: none;
 }
 
-/* line 60, ../sass/_block/_block_home.scss */
+/* line 62, ../sass/_block/_block_home.scss */
 
-#home #mobile-menu {
+#mobile-menu {
 	display: none;
 	position: relative;
 	z-index: 999999;
@@ -1354,9 +1353,9 @@ th {
 	background-color: #ffffff;
 }
 
-/* line 76, ../sass/_block/_block_home.scss */
+/* line 78, ../sass/_block/_block_home.scss */
 
-#home #mobile-menu #nav-cancel {
+#mobile-menu #nav-cancel {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -1370,42 +1369,42 @@ th {
 	line-height: 2;
 }
 
-/* line 90, ../sass/_block/_block_home.scss */
+/* line 92, ../sass/_block/_block_home.scss */
 
-#home #mobile-menu #nav-cancel .icon-cancel:before {
-	color: #666666;
+#mobile-menu #nav-cancel .icon-cancel:before {
+	color: #495d6d;
 }
 
-/* line 96, ../sass/_block/_block_home.scss */
+/* line 99, ../sass/_block/_block_home.scss */
 
-#home .menu-mob {
+.menu-mob {
 	max-width: 340px;
 	margin: 0 auto;
 	text-align: center;
 }
 
-/* line 103, ../sass/_block/_block_home.scss */
+/* line 106, ../sass/_block/_block_home.scss */
 
-#home .menu-mob ul li {
+.menu-mob ul li {
 	list-style: none;
 }
 
-/* line 106, ../sass/_block/_block_home.scss */
+/* line 109, ../sass/_block/_block_home.scss */
 
-#home .menu-mob ul li a {
+.menu-mob ul li a {
 	text-decoration: none;
-	color: #666666;
+	color: #495d6d;
 }
 
-/* line 110, ../sass/_block/_block_home.scss */
+/* line 113, ../sass/_block/_block_home.scss */
 
-#home .menu-mob ul li a:hover {
+.menu-mob ul li a:hover {
 	color: #24a7cf;
 }
 
-/* line 117, ../sass/_block/_block_home.scss */
+/* line 121, ../sass/_block/_block_home.scss */
 
-#home #nav-toggle {
+#nav-toggle {
 	display: none;
 	float: right;
 	position: absolute;
@@ -1416,27 +1415,27 @@ th {
 	cursor: pointer;
 	height: 85px;
 	line-height: 85px;
-	color: #24a7cf;
+	color: #495d6d;
 }
 
-/* line 132, ../sass/_block/_block_home.scss */
+/* line 135, ../sass/_block/_block_home.scss */
 
-#home #nav-toggle span:before {
+#nav-toggle span:before {
 	content: "\e871";
 	font-size: 24px;
 	font-family: 'fluida-blocks', sans-serif;
 	font-weight: normal;
 }
 
-/* line 139, ../sass/_block/_block_home.scss */
+/* line 142, ../sass/_block/_block_home.scss */
 
-#home #nav-toggle:hover {
-	color: #8d8d8d;
+#nav-toggle:hover {
+	color: #24a7cf;
 }
 
-/* line 144, ../sass/_block/_block_home.scss */
+/* line 147, ../sass/_block/_block_home.scss */
 
-#home .intro-text {
+.intro-text {
 	position: absolute;
 	z-index: 3;
 	left: 0;
@@ -1451,18 +1450,18 @@ th {
 	max-width: 1284px;
 }
 
-/* line 155, ../sass/_block/_block_home.scss */
+/* line 158, ../sass/_block/_block_home.scss */
 
-#home .intro-text h1 {
+.intro-text h1 {
 	color: #ffffff;
 	text-transform: uppercase;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
 }
 
-/* line 164, ../sass/_block/_block_home.scss */
+/* line 167, ../sass/_block/_block_home.scss */
 
-#home #site-header-main {
+#site-header-main {
 	display: inline-block;
 	position: fixed;
 	top: 0;
@@ -1475,9 +1474,9 @@ th {
 	transition: all .2s linear;
 }
 
-/* line 176, ../sass/_block/_block_home.scss */
+/* line 179, ../sass/_block/_block_home.scss */
 
-#home #site-header-main.header-fixed {
+#site-header-main.header-fixed {
 	background-color: #ffffff;
 	box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 	-webkit-transition: .25s background-color ease-in-out;
@@ -1485,49 +1484,49 @@ th {
 	border-bottom: 1px solid #444;
 }
 
-/* line 183, ../sass/_block/_block_home.scss */
+/* line 186, ../sass/_block/_block_home.scss */
 
-#home #site-header-main.header-fixed a {
+#site-header-main.header-fixed a {
 	color: #495d6d;
 }
 
-/* line 186, ../sass/_block/_block_home.scss */
+/* line 189, ../sass/_block/_block_home.scss */
 
-#home #site-header-main.header-fixed a:hover {
+#site-header-main.header-fixed a:hover {
 	color: #24a7cf;
-}
-
-/* line 193, ../sass/_block/_block_home.scss */
-
-#home #site-header-main.header-fixed .socials a:hover:first-of-type {
-	color: #3B5998;
 }
 
 /* line 196, ../sass/_block/_block_home.scss */
 
-#home #site-header-main.header-fixed .socials a:hover:nth-of-type(2) {
-	color: #00aced;
+#site-header-main.header-fixed .socials a:hover:first-of-type {
+	color: #3B5998;
 }
 
 /* line 199, ../sass/_block/_block_home.scss */
 
-#home #site-header-main.header-fixed .socials a:hover:nth-of-type(3) {
+#site-header-main.header-fixed .socials a:hover:nth-of-type(2) {
+	color: #00aced;
+}
+
+/* line 202, ../sass/_block/_block_home.scss */
+
+#site-header-main.header-fixed .socials a:hover:nth-of-type(3) {
 	color: #d34836;
 }
 
-/* line 209, ../sass/_block/_block_home.scss */
+/* line 211, ../sass/_block/_block_home.scss */
 
 .noscroll {
 	overflow: hidden;
 }
 
-/* line 213, ../sass/_block/_block_home.scss */
+/* line 215, ../sass/_block/_block_home.scss */
 
 .socials {
 	margin-top: 35px;
 }
 
-/* line 216, ../sass/_block/_block_home.scss */
+/* line 218, ../sass/_block/_block_home.scss */
 
 .socials a {
 	display: block;
@@ -1538,25 +1537,25 @@ th {
 	padding: 0 .7em;
 	font-family: 'socials', sans-serif;
 	font-weight: normal;
-	color: #fcfff3;
+	color: #495d6d;
 	text-decoration: none;
 	font-size: 1em;
 	font-weight: bold;
 }
 
-/* line 230, ../sass/_block/_block_home.scss */
+/* line 232, ../sass/_block/_block_home.scss */
 
 .socials a:hover:first-of-type {
 	color: #3B5998;
 }
 
-/* line 233, ../sass/_block/_block_home.scss */
+/* line 235, ../sass/_block/_block_home.scss */
 
 .socials a:hover:nth-of-type(2) {
 	color: #00aced;
 }
 
-/* line 236, ../sass/_block/_block_home.scss */
+/* line 238, ../sass/_block/_block_home.scss */
 
 .socials a:hover:nth-of-type(3) {
 	color: #d34836;
@@ -1566,19 +1565,82 @@ th {
 
 #about {
 	width: 100%;
-	height: 100%;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
-/* line 6, ../sass/_block/_block_about.scss */
+/* line 5, ../sass/_block/_block_about.scss */
 
 #about .text-title {
-	color: #ffffff;
+	color: #495d6d;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
 	font-weight: bold;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+/* line 13, ../sass/_block/_block_about.scss */
+
+#about .text-content {
+	color: #495d6d;
+}
+
+/* line 5, ../sass/_block/_block_gallery.scss */
+
+.lp-boxes {
+	display: block;
+	float: none;
+	width: 100%;
+	overflow: hidden;
+}
+
+/* line 12, ../sass/_block/_block_gallery.scss */
+
+.lp-boxes.lp-boxes-rows-4 .lp-box {
+	width: 25%;
+	display: block;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+
+/* line 19, ../sass/_block/_block_gallery.scss */
+
+.lp-boxes.lp-boxes-rows-4 .lp-box-image {
+	position: relative;
+	overflow: hidden;
+}
+
+/* line 23, ../sass/_block/_block_gallery.scss */
+
+.lp-boxes.lp-boxes-rows-4 .lpbox-rnd8 {
+	background-color: #a5a3a5;
+}
+
+/* line 27, ../sass/_block/_block_gallery.scss */
+
+.lp-boxes-2 .lp-box .lp-box-image {
+	min-height: 400px;
+	height: auto;
+}
+
+/* line 31, ../sass/_block/_block_gallery.scss */
+
+.lp-boxes-animated .lp-box .lp-box-image > img {
+	filter: grayscale(25%);
+	transform: scale(1);
+	-webkit-transition: 1s all ease;
+	transition: 1s all ease;
+}
+
+/* line 37, ../sass/_block/_block_gallery.scss */
+
+.lp-box .lp-box-image > img {
+	position: relative;
+	z-index: 10;
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -2582,21 +2644,21 @@ th {
 
 @media only screen and (max-width: 992px) {
 
-/* line 244, ../sass/_block/_block_home.scss */
+/* line 248, ../sass/_block/_block_home.scss */
 
-#home #nav-toggle {
+#nav-toggle {
 	display: block;
-}
-
-/* line 247, ../sass/_block/_block_home.scss */
-
-#home .menu-desktop {
-	display: none;
 }
 
 /* line 251, ../sass/_block/_block_home.scss */
 
-#home #site-header-main {
+.menu-desktop {
+	display: none;
+}
+
+/* line 255, ../sass/_block/_block_home.scss */
+
+#site-header-main {
 	background-color: #ffffff;
 	border-bottom: 1px solid #8e8e8e;
 }

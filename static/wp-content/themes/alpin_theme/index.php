@@ -1,33 +1,25 @@
-<?php
 
-/*
-	Template Name: Template One Pager
-*/
+<?php
+/**
+ * The main template file
+ */
 
 get_header(); ?>
 
-<?php
+<div id="content">
 
-	if( have_posts() ):
+	<?php
+        if ( have_posts() ) :
+            while ( have_posts() ) : the_post();
+                get_template_part( 'template-parts/post/content', get_post_format() );
+            endwhile;
+        else :
+            get_template_part( 'template-parts/post/content', 'none' );
+        endif;
+    ?>
 
-		while( have_posts() ): the_post(); ?>
-
-		<?php get_template_part('template_parts/home'); ?>
-
-		<?php get_template_part('template_parts/about'); ?>
-
-		<?php get_template_part('template_parts/services'); ?>
-
-		<?php get_template_part('template_parts/gallery'); ?>
-
-		<?php get_template_part('template_parts/contact'); ?>
-
-		<p><?php the_content(); ?></p>
-
-		<?php endwhile;
-
-	endif;
-
-	?>
+</div><!-- end of #content -->
 
 <?php get_footer(); ?>
+
+
