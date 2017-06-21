@@ -2,15 +2,16 @@
   width: 100%;
   overflow-x: hidden;
 
-  .text-title {
-    color: $colorTextHover;
-    @include fontLight();
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
 
-  }
-  .text-content {
-    color: $colorTextHover;
-  }
+}
+.text-title {
+  color: $colorTextHover;
+  @include fontLight();
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+.text-content {
+  color: $colorTextHover;
 }
