@@ -6,10 +6,12 @@ var scrollToTop = (function(){
 
             if($(this).scrollTop() > 100) {
                 $('#site-header-main').addClass('header-fixed');
+                $('.logo').css('visibility', 'visible');
                 $('#toTop').fadeIn();
             } else {
                 $('#toTop').fadeOut();
                 $('#site-header-main').removeClass('header-fixed');
+                $('.logo').css('visibility', 'hidden');
             }
         });
 
@@ -26,17 +28,17 @@ var scrollToTop = (function(){
             $('#mobile-menu').show().animate({
                 left: "0"
             }, 500);
-            //$('body').addClass("noscroll");
+            $('.logo').hide();
+
         });
         $('#nav-cancel').on('click', function(){
             $('#mobile-menu').animate({
                 left: "100%"
             }, 500, function(){
                 $(this).css("left","-100%").hide();
+                $('.logo').show();
             });
-            //$('body').removeClass("noscroll");
         });
-
     }
 
     function init() {

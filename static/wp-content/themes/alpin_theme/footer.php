@@ -1,4 +1,3 @@
-
 <?php
 
 // Exit if accessed directly
@@ -10,20 +9,20 @@ if( !defined( 'ABSPATH' ) ) {
  * Footer Template
  *
  * @file footer.php
- *
+ * 
  */
 ?>
-<footer>
+        <footer>
+            
+            <?php get_template_part( 'template-parts/footer/site', 'info' ); ?>
 
-    <?php get_template_part( 'template-parts/footer/site', 'info' ); ?>
+            <div id="toTop" class="toTop-show">
+                <i class="icon-back2top"></i>
+            </div>
 
-    <div id="toTop" class="toTop-show">
-        <i class="icon-back2top"></i>
-    </div>
+        </footer>
 
-</footer>
+        <?php wp_footer(); ?>
 
-<?php wp_footer(); ?>
-
-</body>
+    </body>
 </html>

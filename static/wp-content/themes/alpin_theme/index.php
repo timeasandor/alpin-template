@@ -1,25 +1,10 @@
-
 <?php
 /**
  * The main template file
  */
 
-get_header(); ?>
+get_header();
 
-<div id="content">
+wpb_pages();
 
-	<?php
-        if ( have_posts() ) :
-            while ( have_posts() ) : the_post();
-                get_template_part( 'template-parts/post/content', get_post_format() );
-            endwhile;
-        else :
-            get_template_part( 'template-parts/post/content', 'none' );
-        endif;
-    ?>
-
-</div><!-- end of #content -->
-
-<?php get_footer(); ?>
-
-
+get_footer();

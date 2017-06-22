@@ -2,37 +2,39 @@
   width: 100%;
   overflow-x: hidden;
 
-}
-.lp-block {
-  color: $colorTextHover;
-  padding: 20px 0;
+  .lp-block {
+    color: $colorTextHover;
+    padding: 20px 0;
+    text-align: center;
+    
+    i {
+      &:before {
+        color: $colorBrandHighlight;
+        font-size: 35px;
 
-  i {
-    &:before {
-      color: $colorBrandHighlight;
-      font-size: 35px;
+        &:hover {
+          color: $colorTextHover;
+        }
+      }
+    }
+    .lp-block-title {
+      text-transform: uppercase;
+      font-size: 1em;
+      @include fontLight();
+      font-weight: bold;
+      margin: 1em 0;
 
       &:hover {
-        color: $colorTextHover;
+        color: $colorBrandHighlight;
       }
     }
   }
-  .lp-block-title {
+  .text-title {
+    color: $colorTextHover;
     text-transform: uppercase;
-    font-size: 1.1em;
+    text-align: center;
+    font-size: 2em;
     @include fontLight();
     font-weight: bold;
-
-    &:hover {
-      color: $colorBrandHighlight;
-    }
   }
-}
-.text-title {
-  color: $colorTextHover;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 2em;
-  @include fontLight();
-  font-weight: bold;
 }

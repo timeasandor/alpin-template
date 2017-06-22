@@ -1,17 +1,12 @@
-#home {
-
-  height: 100%;
-  width: 100%;
-  background-image: url('../images/narlukada-alpin.png');
-  background-repeat: no-repeat;
+.home {
+  //height: 100%;
+  //width: 100%;
   position: relative;
-  overflow: hidden;
-
 }
 
 img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .navbar {
@@ -21,6 +16,7 @@ img {
 .logo {
   margin-top: 10px;
   margin-bottom: 10px;
+  visibility: hidden;
 
   img {
     width: 100%;
@@ -52,12 +48,19 @@ img {
           //color: $colorTextHover;
         }
       }
+      img {
+        max-width: 25px;
+      }
+
+      &:last-child {
+        a {
+          margin-right: 0;
+        }
+      }
     }
   }
 }
-#nav-mobile {
 
-}
 
 #mobile-menu {
   display: none;
@@ -65,13 +68,13 @@ img {
   z-index: 999999;
   overflow-y: auto;
   overflow-x: hidden;
-  top: -90px;
+  top: 0;
   left: -100%;
   right: 0;
   bottom: 0;
   line-height: 2em;
   width: 100%;
-  height: 70%;
+  //height: 70%;
   padding: 2em;
   background-color: $colorWhite;
 
@@ -113,7 +116,21 @@ img {
         &:hover {
           color: $colorBrandHighlight;
         }
+        img {
+          max-width: 25px;
+        }
       }
+    }
+  }
+
+  .socials {
+
+    margin-top: 0;
+    @include display-flex();
+    @include justify-content(center);
+
+    a {
+      color: $colorTextHover;
     }
   }
 }
@@ -175,6 +192,7 @@ img {
   vertical-align: top;
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
+  min-height: 90px;
 
   &.header-fixed {
     background-color: #ffffff;
@@ -192,6 +210,7 @@ img {
     }
     .socials {
       a {
+
         &:hover {
           &:first-of-type {
             color: #3B5998;
@@ -223,7 +242,7 @@ img {
     overflow: hidden;
     padding: 0 .7em;
     @include fontSocials();
-    color: $colorTextHover;
+    color: $colorText;
     text-decoration: none;
     font-size: 1em;
     font-weight: bold;
@@ -242,21 +261,36 @@ img {
   }
 }
 @media only  screen and (max-width: $for_bootstrap_md) {
-  #home {
-
+  .menu-desktop ul li a {
+    margin-right: 25px;
   }
+  .socials a {
+    padding: 0 .4em;
+  }
+  .logo {
+    margin-top: 20px;
+  }
+}
+@media only  screen and (max-width: $for_bootstrap_sm) {
+
   #nav-toggle {
     display: block;
+    color: $colorText;
   }
   .menu-desktop {
     display: none;
   }
 
   #site-header-main {
-    background-color: $colorWhite;
-    border-bottom: 1px solid $colorBrand;
+    //background-color: $colorWhite;
+    //border-bottom: 1px solid $colorBrand;
   }
   .socials {
-
+    display: none;
+  }
+  .menu-mob {
+    .socials {
+      @include display-flex();
+    }
   }
 }

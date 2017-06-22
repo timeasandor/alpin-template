@@ -12,7 +12,7 @@ body {
   line-height: 1.35;
   margin:0;
   background:#ffffff;
-  color:$colorText;
+  color:$colorTextHover;
   @include box-sizing(content-box);
 }
 img {
