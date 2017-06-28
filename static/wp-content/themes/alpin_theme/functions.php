@@ -59,7 +59,9 @@ function wpb_pages() {
         'post_status'  => 'publish',
     );
     $pages = get_pages($args);
-    foreach ($pages as $page) {
+
+
+    foreach ($pages as $idx => $page) {
         $templateName = get_post_meta($page->ID, '_wp_page_template', true);
 
         if (!empty(locate_template($templateName))) {
@@ -70,6 +72,7 @@ function wpb_pages() {
             echo '</section>';
         }
     }
+
 }
 add_action('wpb_pages', 'wpb_pages');
 

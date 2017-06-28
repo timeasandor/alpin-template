@@ -1,40 +1,40 @@
-#services {
+.service {
   width: 100%;
   overflow-x: hidden;
+}
 
-  .lp-block {
-    color: $colorTextHover;
-    padding: 20px 0;
-    text-align: center;
-    
-    i {
-      &:before {
-        color: $colorBrandHighlight;
-        font-size: 35px;
+.lp-block {
+  color: $colorTextHover;
+  padding: 20px 0;
+  text-align: center;
 
-        &:hover {
-          color: $colorTextHover;
-        }
-      }
-    }
-    .lp-block-title {
-      text-transform: uppercase;
-      font-size: 1em;
-      @include fontLight();
-      font-weight: bold;
-      margin: 1em 0;
+  i {
+    &:before {
+      color: $colorBrandHighlight;
+      font-size: 35px;
 
       &:hover {
-        color: $colorBrandHighlight;
+        color: $colorTextHover;
       }
     }
   }
-  .text-title {
-    color: $colorTextHover;
+  .lp-block-title {
     text-transform: uppercase;
-    text-align: center;
-    font-size: 2em;
+    font-size: 1em;
     @include fontLight();
     font-weight: bold;
+    margin: 1em 0;
+
+    &:hover {
+      color: $colorBrandHighlight;
+    }
   }
+}
+.text-title {
+  color: $colorTextHover;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2em;
+  @include fontLight();
+  font-weight: bold;
 }

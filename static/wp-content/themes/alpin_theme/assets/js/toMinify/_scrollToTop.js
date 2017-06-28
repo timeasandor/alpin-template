@@ -51,4 +51,6 @@ var scrollToTop = (function(){
     }
 
 })();
-scrollToTop.init();
+$(document).ready(function(){
+    scrollToTop.init();
+});

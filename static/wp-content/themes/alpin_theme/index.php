@@ -5,6 +5,8 @@
 
 get_header();
 
+
 wpb_pages();
+
 
 get_footer();
