@@ -1330,7 +1330,7 @@ th {
 	left: 0;
 	width: 100%;
 	height: 16px;
-	z-index: 101;
+	z-index: 10;
 	background-image: url("../images/shadow-narlukada.png");
 	background-repeat: no-repeat;
 	background-position: top center;
@@ -1556,8 +1556,8 @@ img {
 	z-index: 3;
 	left: 0;
 	right: 0;
-	top: auto;
-	bottom: 0;
+	top: 80%;
+	bottom: auto;
 	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
@@ -1566,7 +1566,7 @@ img {
 	text-align: center;
 }
 
-/* line 220, ../sass/_block/_block_home.scss */
+/* line 217, ../sass/_block/_block_home.scss */
 
 .intro-text h1 {
 	margin: 0;
@@ -1592,7 +1592,7 @@ img {
 	visibility: hidden;
 }
 
-/* line 245, ../sass/_block/_block_home.scss */
+/* line 242, ../sass/_block/_block_home.scss */
 
 .intro-text p {
 	font-family: 'Open Sans', sans-serif;
@@ -1616,14 +1616,14 @@ img {
 	animation-fill-mode: forwards;
 }
 
-/* line 267, ../sass/_block/_block_home.scss */
+/* line 264, ../sass/_block/_block_home.scss */
 
 #site-header-main {
 	display: inline-block;
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 101;
+	z-index: 9999;
 	width: 100%;
 	margin: 0 auto;
 	vertical-align: top;
@@ -1632,7 +1632,7 @@ img {
 	min-height: 90px;
 }
 
-/* line 280, ../sass/_block/_block_home.scss */
+/* line 277, ../sass/_block/_block_home.scss */
 
 #site-header-main.header-fixed {
 	background-color: #ffffff;
@@ -1642,49 +1642,49 @@ img {
 	border-bottom: 1px solid #444;
 }
 
-/* line 287, ../sass/_block/_block_home.scss */
+/* line 284, ../sass/_block/_block_home.scss */
 
 #site-header-main.header-fixed a {
 	color: #495d6d;
 }
 
-/* line 290, ../sass/_block/_block_home.scss */
+/* line 287, ../sass/_block/_block_home.scss */
 
 #site-header-main.header-fixed a:hover {
 	color: #24a7cf;
 }
 
-/* line 298, ../sass/_block/_block_home.scss */
+/* line 295, ../sass/_block/_block_home.scss */
 
 #site-header-main.header-fixed .socials a:hover:first-of-type {
 	color: #3B5998;
 }
 
-/* line 301, ../sass/_block/_block_home.scss */
+/* line 298, ../sass/_block/_block_home.scss */
 
 #site-header-main.header-fixed .socials a:hover:nth-of-type(2) {
 	color: #00aced;
 }
 
-/* line 304, ../sass/_block/_block_home.scss */
+/* line 301, ../sass/_block/_block_home.scss */
 
 #site-header-main.header-fixed .socials a:hover:nth-of-type(3) {
 	color: #d34836;
 }
 
-/* line 313, ../sass/_block/_block_home.scss */
+/* line 310, ../sass/_block/_block_home.scss */
 
 .noscroll {
 	overflow: hidden;
 }
 
-/* line 317, ../sass/_block/_block_home.scss */
+/* line 314, ../sass/_block/_block_home.scss */
 
 .socials {
 	margin-top: 35px;
 }
 
-/* line 320, ../sass/_block/_block_home.scss */
+/* line 317, ../sass/_block/_block_home.scss */
 
 .socials a {
 	display: block;
@@ -1701,19 +1701,19 @@ img {
 	font-weight: bold;
 }
 
-/* line 334, ../sass/_block/_block_home.scss */
+/* line 331, ../sass/_block/_block_home.scss */
 
 .socials a:hover:first-of-type {
 	color: #3B5998;
 }
 
-/* line 337, ../sass/_block/_block_home.scss */
+/* line 334, ../sass/_block/_block_home.scss */
 
 .socials a:hover:nth-of-type(2) {
 	color: #00aced;
 }
 
-/* line 340, ../sass/_block/_block_home.scss */
+/* line 337, ../sass/_block/_block_home.scss */
 
 .socials a:hover:nth-of-type(3) {
 	color: #d34836;
@@ -1728,7 +1728,7 @@ img {
 	position: relative;
 }
 
-/* line 8, ../sass/_block/_block_about.scss */
+/* line 7, ../sass/_block/_block_about.scss */
 
 .about img {
 	width: 100%;
@@ -1738,7 +1738,7 @@ img {
 	z-index: 0;
 }
 
-/* line 16, ../sass/_block/_block_about.scss */
+/* line 15, ../sass/_block/_block_about.scss */
 
 .about .content {
 	position: relative;
@@ -1746,7 +1746,7 @@ img {
 	max-width: 1200px;
 }
 
-/* line 22, ../sass/_block/_block_about.scss */
+/* line 21, ../sass/_block/_block_about.scss */
 
 .about .text-title {
 	color: #fcfff3;
@@ -1756,7 +1756,7 @@ img {
 	text-transform: uppercase;
 }
 
-/* line 29, ../sass/_block/_block_about.scss */
+/* line 28, ../sass/_block/_block_about.scss */
 
 .about .text-content {
 	color: #fcfff3;
@@ -3066,19 +3066,19 @@ textarea:focus {
 
 @media only screen and (max-width: 992px) {
 
-/* line 347, ../sass/_block/_block_home.scss */
+/* line 344, ../sass/_block/_block_home.scss */
 
 .menu-desktop ul li a {
 	margin-right: 25px;
 }
 
-/* line 350, ../sass/_block/_block_home.scss */
+/* line 347, ../sass/_block/_block_home.scss */
 
 .socials a {
 	padding: 0 .4em;
 }
 
-/* line 353, ../sass/_block/_block_home.scss */
+/* line 350, ../sass/_block/_block_home.scss */
 
 .logo {
 	margin-top: 20px;
@@ -3094,26 +3094,26 @@ textarea:focus {
 	display: none;
 }
 
-/* line 359, ../sass/_block/_block_home.scss */
+/* line 356, ../sass/_block/_block_home.scss */
 
 #nav-toggle {
 	display: block;
 	color: #fcfff3;
 }
 
-/* line 363, ../sass/_block/_block_home.scss */
+/* line 360, ../sass/_block/_block_home.scss */
 
 .menu-desktop {
 	display: none;
 }
 
-/* line 371, ../sass/_block/_block_home.scss */
+/* line 368, ../sass/_block/_block_home.scss */
 
 .socials {
 	display: none;
 }
 
-/* line 375, ../sass/_block/_block_home.scss */
+/* line 372, ../sass/_block/_block_home.scss */
 
 .menu-mob .socials {
 	display: -webkit-flex;

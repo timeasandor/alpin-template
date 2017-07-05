@@ -10,7 +10,7 @@
     left: 0;
     width: 100%;
     height: 16px;
-    z-index: 101;
+    z-index: 10;
     background-image: url("../images/shadow-narlukada.png");
     background-repeat: no-repeat;
     background-position: top center;
@@ -207,12 +207,9 @@ img {
   z-index: 3;
   left: 0;
   right: 0;
-  top: auto;
-  bottom: 0;
-  //margin: 0 auto;
+  top: 80%;
+  bottom: auto;
   @include transform(translateY(-50%));
-  //max-width: 1284px;
-  //max-width: 650px;
   color: $colorWhite;
   text-align: center;
 
@@ -269,7 +266,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 101;
+  z-index: 9999;
   width: 100%;
   margin: 0 auto;
   vertical-align: top;
