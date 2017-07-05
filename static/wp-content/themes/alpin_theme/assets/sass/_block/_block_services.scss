@@ -29,6 +29,27 @@
       color: $colorBrandHighlight;
     }
   }
+  .lp-block-content {
+    text-align: left;
+    ul {
+      li {
+        list-style: none;
+        line-height: 1.2;
+        padding: 5px;
+
+        &:before {
+          content: "\f078";
+          //content: "\e9bd";
+          color: $colorBrandHighlight;
+          font-size: 0.8em;
+          @include fontIcon();
+        }
+        span {
+          padding-left: 10px;
+        }
+      }
+    }
+  }
 }
 .text-title {
   color: $colorTextHover;

@@ -40,6 +40,17 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: 'iconmeta';
+  src:  url('fonts/iconmeta.eot?o7tart');
+  src:  url('fonts/iconmeta.eot?o7tart#iefix') format('embedded-opentype'),
+  url('fonts/iconmeta.ttf?o7tart') format('truetype'),
+  url('fonts/iconmeta.woff?o7tart') format('woff'),
+  url('fonts/iconmeta.svg?o7tart#iconmeta') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @import url( 'icons/fonts/fontfaces.css' ); /* Import the fonts */
 
 @import 'compass/css3';

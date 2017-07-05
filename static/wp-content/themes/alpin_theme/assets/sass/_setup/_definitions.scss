@@ -82,6 +82,11 @@ $hover_medium: 0.6s;
 	font-weight: normal;
 }
 
+@mixin fontIcon {
+	font-family: 'iconmeta', sans-serif;
+	font-weight: normal;
+}
+
 @mixin font-smoothing($value: on) {
 	@if $value == on {
 		-webkit-font-smoothing: antialiased;
@@ -105,3 +110,6 @@ $hover_medium: 0.6s;
 		background-position:0 0;
 	}
 }
+
+
+@mixin keyframes($name) {  }

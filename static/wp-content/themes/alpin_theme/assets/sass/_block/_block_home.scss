@@ -1,3 +1,39 @@
+.section {
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    display: block;
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 16px;
+    z-index: 101;
+    background-image: url("../images/shadow-narlukada.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+  &:after {
+    display: block;
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 16px;
+    z-index: 101;
+    background-image: url("../images/shade_bottom_light_narlukada.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+}
+
+.bcg {
+ // position: relative;
+}
+
 .home {
   //height: 100%;
   //width: 100%;
@@ -171,20 +207,62 @@ img {
   z-index: 3;
   left: 0;
   right: 0;
-  top: 50%;
-  bottom: auto;
-  margin: 0 auto;
+  top: auto;
+  bottom: 0;
+  //margin: 0 auto;
   @include transform(translateY(-50%));
-  max-width: 1284px;
+  //max-width: 1284px;
+  //max-width: 650px;
+  color: $colorWhite;
+  text-align: center;
+
 
   h1 {
+    margin: 0;
     color: $colorWhite;
     text-transform: uppercase;
     @include fontLight();
-  }
-  p {
+    @include animation-properties((animation-name: moveUp));
+    @include animation-properties((animation-duration: 1.5s));
+    @include animation-properties((animation-timing-function: ease));
+    @include animation-properties((animation-fill-mode: forwards));
+    @include animation-properties((animation-delay: 1s));
+    visibility: hidden;
 
+    @keyframes moveUp {
+      0% {
+        @include transform(translate(0,0));
+      }
+
+
+      100% {
+        @include transform(translate(0, -100px));
+        visibility: visible;
+      }
+    }
   }
+
+  p {
+    @include fontLight();
+    font-style: italic;
+    visibility: hidden;
+    @include animation-properties((animation-name: moveUpp));
+    @include animation-properties((animation-duration: 1.5s));
+    @include animation-properties((animation-timing-function: ease));
+    @include animation-properties((animation-delay: 1.5s));
+    @include animation-properties((animation-fill-mode: forwards));
+
+    @keyframes moveUpp {
+      0% {
+        @include transform(translate(0, 0));
+      }
+      100% {
+        @include transform(translate(0, -100px));
+        visibility: visible;
+      }
+    }
+  }
+
 }
 #site-header-main {
   display: inline-block;

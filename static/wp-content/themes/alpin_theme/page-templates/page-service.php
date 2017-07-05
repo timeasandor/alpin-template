@@ -15,15 +15,15 @@ if( !defined( 'ABSPATH' ) ) {
  * @file page-service.php
  */
 
-$post = get_page_by_path('service', '', 'page');
+$post = get_page_by_path('services', '', 'page');
 $objPost = get_post(pll_get_post($post->ID));
 ?>
 
-<div class="container">
+<div class="container main_pt50 main_pb50">
     <div class="row">
-        <div class="col-xs-12">
-            <div class="text-title main_pt30 main_pb30"><?php echo $objPost->post_title; ?></div>
-        </div>
+        <!--<div class="col-xs-12">-->
+            <!--<div class="text-title main_pt30 main_pb30"><?php echo $objPost->post_title; ?></div>-->
+        <!--</div>-->
 
         <?php
             $args = array( 'post_type' => 'service', 'order' => 'ASC', 'orderby'  => 'menu_order', 'posts_per_page' => 3 );
@@ -39,11 +39,11 @@ $objPost = get_post(pll_get_post($post->ID));
                 $i = 0;
                 while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-                    <div class="col-xs-12 col-sm-4">
+                    <div class="col-xs-12">
                         <div class="lp-block">
                             <i class="<?php echo $icons[$i]; ?>"></i>
                             <div class="lp-block-content">
-                                <h5 class="lp-block-title"><?php the_title(); ?></h5>
+                                <h5 class="lp-block-title"></h5>
                                 <div class="lp-block-text"><?php the_content(); ?></div>
                             </div>
                         </div>
@@ -53,11 +53,9 @@ $objPost = get_post(pll_get_post($post->ID));
                 endwhile;
             endif;
         ?>
-
-        <div class="col-xs-12">
-            <div class="text-title main_pt30 main_pb30"><?php echo $objPost->post_title; ?></div>
-        </div>
-
+        <!--<div class="col-xs-12">-->
+            <!--<div class="text-title main_pt30 main_pb30"></div>-->
+        <!--</div>-->
         <div class="clear"></div>
     </div>
 </div>

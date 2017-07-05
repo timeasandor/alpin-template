@@ -44,7 +44,8 @@ module.exports = function(grunt) {
                     'js/vendor.min.js': [
                         'js/toMinify/vendor/jquery.min.js',
                         'js/toMinify/vendor/modernizr.custom.92950.js',
-                        'js/toMinify/vendor/swiper.jquery.min.js'
+                        'js/toMinify/vendor/swiper.jquery.min.js',
+                        'js/toMinify/vendor/skrollr.min.js'
                     ]
                 }
             }

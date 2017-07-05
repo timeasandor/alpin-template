@@ -20,6 +20,10 @@ var scrollToTop = (function(){
             $('html, body').animate({scrollTop : 0},800);
             return false;
         });
+
+        //init skrollr
+
+        var s = skrollr.init();
     }
     
     function initNavMobile() {

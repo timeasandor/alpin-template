@@ -39,7 +39,6 @@ if ( ! function_exists( 'alpintheme_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'alpintheme_setup' );
 
-
 /************************* load page sections *************************/
 function get_template_slug_name($name) {
     $start = strripos($name, '-') + 1;
@@ -59,23 +58,21 @@ function wpb_pages() {
         'post_status'  => 'publish',
     );
     $pages = get_pages($args);
-
-
-    foreach ($pages as $idx => $page) {
+    foreach ($pages as $page) {
         $templateName = get_post_meta($page->ID, '_wp_page_template', true);
 
-        if (!empty(locate_template($templateName))) {
+        //if (!empty(locate_template($templateName))) {
             $templateSlugName = get_template_slug_name($templateName);
             
             echo '<section id="'.$page->post_name.'" class="section '.$templateSlugName.'">';
-            echo get_template_part('page-templates/page', $templateSlugName);
-            echo '</section>';
-        }
-    }
 
+                    echo get_template_part('page-templates/page', $templateSlugName);
+
+            echo '</section>';
+        //}
+    }
 }
 add_action('wpb_pages', 'wpb_pages');
-
 
 /************************* load child pages *************************/
 function wpb_child_page($parentId) {
@@ -87,11 +84,11 @@ function wpb_child_page($parentId) {
     foreach ($pages as $page) {
         $templateName = get_post_meta($page->ID, '_wp_page_template', true);
 
-        if (!empty(locate_template($templateName))) {
+        //if (!empty(locate_template($templateName))) {
             $templateSlugName = get_template_slug_name($templateName);
             
             echo get_template_part('page-templates/page', $templateSlugName);
-        }
+        //}
     }
 }
 add_action('wpb_childpages', 'wpb_child_page');

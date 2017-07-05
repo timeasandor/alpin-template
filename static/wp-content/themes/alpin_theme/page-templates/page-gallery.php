@@ -30,12 +30,12 @@ if ( $the_query->have_posts() ) : ?>
                 while ( $the_query->have_posts() ) : $the_query->the_post(); 
                     if (has_post_thumbnail( $the_query->ID ) ):
 //                        $image = wp_get_attachment_image_src(get_post_thumbnail_id($the_query->ID));
-                        $image = the_post_thumbnail('gallery-single-thumb');
+                        //$image = the_post_thumbnail('gallery-single-thumb');
                         ?>
 
                         <div class="lp-box box<?php echo $i; ?> ">
                             <div class="lp-box-image lpbox-rnd8">
-                                <img alt="<?php the_title(); ?>" src="<?php echo $image; ?>" />
+                                <?php the_post_thumbnail('gallery-single-thumb'); ?>
                                 <a class="lp-box-link" href="#"><i class="icon-arrow-right2"></i></a>
                                 <div class="lp-box-overlay"></div>
                             </div>

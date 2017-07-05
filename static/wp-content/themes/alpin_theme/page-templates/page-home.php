@@ -19,7 +19,7 @@ $post = get_page_by_path('home', '', 'page');
 $objPost = get_post(pll_get_post($post->ID));
 ?>
 
-<?php echo get_the_post_thumbnail();?>
+<?php echo get_the_post_thumbnail($objPost);?>
 <div id="site-header-main">
     <div class="container">
         <div class="row">
@@ -75,7 +75,12 @@ $objPost = get_post(pll_get_post($post->ID));
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <?php echo $objPost->post_content; ?>
+                <h1>Alpinism Utilitar</h1>
+                <p>
+                    &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet semper dolor.&rdquo;
+                </p>
+                <!--<?php echo $objPost->post_content; ?>-->
+                <div class="clear"></div>
             </div>
         </div>
     </div>
