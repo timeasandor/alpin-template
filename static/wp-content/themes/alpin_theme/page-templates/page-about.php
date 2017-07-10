@@ -25,7 +25,7 @@ $objPost = get_post(pll_get_post($post->ID));
         <div class="col-xs-12 content main_pt50 main_pb50">
             <!--<h2 class="text-title"><?php echo $objPost->post_title; ?></h2>-->
             <div class="text-content">
-                <?php echo $objPost->post_content; ?>
+                <?php echo nl2br($objPost->post_content); ?>
             </div>
         </div>
     </div>

@@ -19,6 +19,7 @@ if( !defined( 'ABSPATH' ) ) {
         <meta name="format-detection" content="telephone=no">
         <meta name="description" content=""/>
         <meta name="keywords" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,700i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <?php wp_head(); ?>
@@ -30,4 +31,4 @@ if( !defined( 'ABSPATH' ) ) {
             $awesome_classes = array( 'no-home' );
         endif;
     ?>
-<body <?php body_class( $awesome_classes ); ?>>
+<body <?php body_class( $awesome_classes ); ?> id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" >

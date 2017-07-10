@@ -23,7 +23,7 @@ $objPost = get_post(pll_get_post($post->ID));
 <div id="site-header-main">
     <div class="container">
         <div class="row">
-            <div class="navbar">
+            <div class="navbar navbar-fixed-top" role="navigation">
                 <div class="logo col-md-3 col-sm-2 col-xs-6">
                     <a href="/">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/narlukada_logo.png" alt="">
@@ -57,7 +57,7 @@ $objPost = get_post(pll_get_post($post->ID));
 
                 <a id="nav-toggle">
                     <span>
-                        &nbsp;
+
                     </span>
                 </a>
 

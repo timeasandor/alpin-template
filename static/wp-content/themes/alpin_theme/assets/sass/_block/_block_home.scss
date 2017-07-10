@@ -84,9 +84,17 @@ img {
         color: $colorText;
         margin-right: 40px;
         text-decoration: none;
+        border-bottom: 0 solid $colorBrandHighlight;
+        @include transition-property(border);
+        @include transition-duration(0.5s);
+        @include transition-timing-function(linear);
 
         &:hover {
           //color: $colorTextHover;
+        }
+        &.active {
+          color: $colorBrandHighlight;
+          border-bottom: 2px solid $colorBrandHighlight;
         }
       }
       img {
@@ -96,6 +104,12 @@ img {
       &:last-child {
         a {
           margin-right: 0;
+        }
+      }
+
+      &.active {
+        a {
+          color: $colorBrandHighlight;
         }
       }
     }
@@ -282,10 +296,14 @@ img {
     border-bottom: 1px solid #444;
 
     a {
-      color: #495d6d;
+      color: $colorTextHover;
 
       &:hover {
-        color: #24a7cf;
+        color: $colorBrandHighlight;
+      }
+      &.active {
+        color: $colorBrandHighlight;
+        border-bottom: 2px solid $colorBrandHighlight;
       }
     }
     .socials {

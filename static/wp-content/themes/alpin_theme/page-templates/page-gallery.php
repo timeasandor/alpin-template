@@ -23,7 +23,7 @@ $args = array( 'post_type' => 'gallery', 'order' => 'ASC', 'orderby'  => 'menu_o
 $the_query = new WP_Query( $args );
 
 if ( $the_query->have_posts() ) : ?>
-    <section class="lp-boxes lp-boxes-2 lp-boxes-animated lp-boxes-rows-4">
+    <section class="lp-boxes lp-boxes-2 lp-boxes-animated lp-boxes-rows-4 main_mt100">
         <div class="lp-boxes-padding">
             <?php
                 $i = 1;
@@ -36,13 +36,14 @@ if ( $the_query->have_posts() ) : ?>
                         <div class="lp-box box<?php echo $i; ?> ">
                             <div class="lp-box-image lpbox-rnd8">
                                 <?php the_post_thumbnail('gallery-single-thumb'); ?>
-                                <a class="lp-box-link" href="#"><i class="icon-arrow-right2"></i></a>
                                 <div class="lp-box-overlay"></div>
                             </div>
                             <div class="lp-box-content">
                                 <h5 class="lp-box-title"><?php the_title(); ?></h5>
                                 <div class="lp-box-text">
-                                    <div class="lp-box-text-inside"><?php the_content(); ?></div>
+                                    <div class="lp-box-text-inside">
+                                        <?php the_content(); ?>
+                                    </div>
                                 </div>
                             </div>
                         </div><!-- lp-box -->
