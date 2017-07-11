@@ -17,7 +17,7 @@ if( !defined( 'ABSPATH' ) ) {
         <meta charset="<?php bloginfo('charset'); ?>">
         <title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
         <meta name="format-detection" content="telephone=no">
-        <meta name="description" content=""/>
+        <meta name="description" content="Alpinism urban Narlukada alpin"/>
         <meta name="keywords" content=""/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,700i" rel="stylesheet">
@@ -31,4 +31,4 @@ if( !defined( 'ABSPATH' ) ) {
             $awesome_classes = array( 'no-home' );
         endif;
     ?>
-<body <?php body_class( $awesome_classes ); ?> id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" >
+<body <?php body_class( $awesome_classes ); ?>>

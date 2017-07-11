@@ -43,6 +43,7 @@
           color: $colorBrandHighlight;
           font-size: 0.8em;
           @include fontIcon();
+          margin-right: 10px;
         }
         span {
           padding-left: 10px;

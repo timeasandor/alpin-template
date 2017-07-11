@@ -91,10 +91,11 @@ img {
 
         &:hover {
           //color: $colorTextHover;
+          border-bottom: 2px solid $colorWhite;
         }
         &.active {
-          color: $colorBrandHighlight;
-          border-bottom: 2px solid $colorBrandHighlight;
+          color: $colorWhite;
+          border-bottom: 2px solid $colorWhite;
         }
       }
       img {

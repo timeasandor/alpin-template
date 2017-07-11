@@ -19,7 +19,7 @@ $post = get_page_by_path('services', '', 'page');
 $objPost = get_post(pll_get_post($post->ID));
 ?>
 
-<div class="container main_pt50 main_pb50">
+<div class="container main_pt75 main_pb75">
     <div class="row">
         <!--<div class="col-xs-12">-->
             <!--<div class="text-title main_pt30 main_pb30"><?php echo $objPost->post_title; ?></div>-->

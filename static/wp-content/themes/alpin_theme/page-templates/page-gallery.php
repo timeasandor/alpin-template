@@ -23,7 +23,7 @@ $args = array( 'post_type' => 'gallery', 'order' => 'ASC', 'orderby'  => 'menu_o
 $the_query = new WP_Query( $args );
 
 if ( $the_query->have_posts() ) : ?>
-    <section class="lp-boxes lp-boxes-2 lp-boxes-animated lp-boxes-rows-4 main_mt100">
+    <section class="lp-boxes lp-boxes-2 lp-boxes-animated lp-boxes-rows-4">
         <div class="lp-boxes-padding">
             <?php
                 $i = 1;

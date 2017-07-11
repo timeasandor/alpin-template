@@ -19,10 +19,8 @@ $post = get_page_by_path('contact/form', '', 'page');
 $objPost = get_post(pll_get_post($post->ID));
 ?>
 
-<div class="container">
-    <div class="row">
-        <div class="wrapper">
-            <?php echo /*$objPost->post_content*/do_shortcode(get_post_field('post_content', $objPost->ID)); ?>
+        <div class="col-sm-6 col-xs-12 fleft">
+            <div class="wrapper">
+                <?php echo /*$objPost->post_content*/do_shortcode(get_post_field('post_content', $objPost->ID)); ?>
+            </div>
         </div>
-    </div>
-</div>

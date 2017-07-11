@@ -66,7 +66,7 @@ var scrollToTop = (function(){
             var posTop = refElement.position().top;
             console.log(posTop);
             console.log(refElement.outerHeight());
-            if (posTop <= scrollPos && posTop + refElement.height() > scrollPos) {
+            if (posTop <= scrollPos && posTop + refElement.outerHeight() > scrollPos) {
                 $('.menu-desktop ul li a').removeClass("active");
                 currLink.addClass("active");
             }

@@ -20,4 +20,11 @@ $objPost = get_post(pll_get_post($post->ID));
 ?>
 
 
-<?php wpb_child_page($objPost->ID);
+<div class="inner-wrapper main_pt100 main_pb75">
+    <div class="container">
+        <div class="row">
+            <?php wpb_child_page($objPost->ID); ?>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
