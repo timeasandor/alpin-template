@@ -6,7 +6,7 @@
   background-color: $colorBgGrey;
 
   &:before {
-    background-image: none;
+    //background-image: none;
   }
   &:after {
     //background-image: none;
@@ -29,13 +29,22 @@
   .text-title {
     color: $colorTextHover;
     @include fontLight();
-    font-weight: bold;
-    text-transform: uppercase;
-
+    text-align: center;
   }
+
   .text-content {
     color: $colorTextHover;
     line-height: 1.2;
     padding: 5px;
+  }
+}
+.title {
+  text-align: center;
+
+  i {
+    &:before {
+      color: $colorBrandHighlight;
+      font-size: 35px;
+    }
   }
 }

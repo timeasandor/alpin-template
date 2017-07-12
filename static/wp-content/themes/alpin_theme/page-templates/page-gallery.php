@@ -22,9 +22,18 @@ if( !defined( 'ABSPATH' ) ) {
 $args = array( 'post_type' => 'gallery', 'order' => 'ASC', 'orderby'  => 'menu_order', 'posts_per_page' => 9 );
 $the_query = new WP_Query( $args );
 
+
+
 if ( $the_query->have_posts() ) : ?>
-    <section class="lp-boxes lp-boxes-2 lp-boxes-animated lp-boxes-rows-4">
+
+<div class="title main_pt100 main_pb30">
+    <i class="blicon-camera"></i>
+    <h1><?php the_title(); ?></h1>
+</div>
+
+    <div class="lp-boxes lp-boxes-2 lp-boxes-animated lp-boxes-rows-4">
         <div class="lp-boxes-padding">
+
             <?php
                 $i = 1;
                 while ( $the_query->have_posts() ) : $the_query->the_post(); 
@@ -53,7 +62,7 @@ if ( $the_query->have_posts() ) : ?>
                 endwhile; 
             ?>
         </div>
-    </section><!-- .lp-boxes -->
+    </div><!-- .lp-boxes -->
 
 <?php
 else:

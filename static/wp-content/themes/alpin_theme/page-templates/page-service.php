@@ -19,11 +19,9 @@ $post = get_page_by_path('services', '', 'page');
 $objPost = get_post(pll_get_post($post->ID));
 ?>
 
+
 <div class="container main_pt75 main_pb75">
     <div class="row">
-        <!--<div class="col-xs-12">-->
-            <!--<div class="text-title main_pt30 main_pb30"><?php echo $objPost->post_title; ?></div>-->
-        <!--</div>-->
 
         <?php
             $args = array( 'post_type' => 'service', 'order' => 'ASC', 'orderby'  => 'menu_order', 'posts_per_page' => 3 );
@@ -41,7 +39,8 @@ $objPost = get_post(pll_get_post($post->ID));
 
                     <div class="col-xs-12">
                         <div class="lp-block">
-                            <i class="<?php echo $icons[$i]; ?>"></i>
+                            <i class="blicon-layers"></i>
+                            <h1><?php echo $objPost->post_title; ?></h1>
                             <div class="lp-block-content">
                                 <h5 class="lp-block-title"></h5>
                                 <div class="lp-block-text"><?php the_content(); ?></div>

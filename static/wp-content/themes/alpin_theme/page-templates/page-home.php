@@ -19,7 +19,7 @@ $post = get_page_by_path('home', '', 'page');
 $objPost = get_post(pll_get_post($post->ID));
 ?>
 
-<?php echo get_the_post_thumbnail($objPost);?>
+<?php echo get_the_post_thumbnail($objPost, null, array('class'=>'bgImg'));?>
 <div id="site-header-main">
     <div class="container">
         <div class="row">

@@ -359,6 +359,32 @@ img {
     }
   }
 }
+@media only  screen and (max-width: $for_laptop) {
+  .home {
+   // height: 100%;
+
+    .bgImg {
+     // height: 100%;
+     // width: auto;
+    }
+
+    .logo {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media only  screen and (max-width: $for_bootstrap_lg) {
+  .home {
+    .bgImg {
+     // margin-left: -20%;
+    }
+  }
+}
+
 @media only  screen and (max-width: $for_bootstrap_md) {
   .menu-desktop ul li a {
     margin-right: 25px;
@@ -369,8 +395,19 @@ img {
   .logo {
     margin-top: 20px;
   }
+  .home {
+    .bgImg {
+      //margin-left: -35%;
+    }
+  }
 }
 @media only  screen and (max-width: $for_bootstrap_sm) {
+
+  .home {
+    .bgImg {
+     // margin-left: -70%;
+    }
+  }
 
   #nav-toggle {
     display: block;
@@ -390,6 +427,28 @@ img {
   .menu-mob {
     .socials {
       @include display-flex();
+    }
+  }
+}
+
+@media only  screen and (max-width: $for_bootstrap_xs) {
+  .home {
+    .bgImg {
+      //margin-left: -100%;
+    }
+  }
+}
+@media only  screen and (max-width: $for_mobile_portrait) {
+  .home {
+    .bgImg {
+      //margin-left: -150%;
+    }
+  }
+}
+@media only  screen and (max-width: $for_mobile_iphone) {
+  .home {
+    .bgImg {
+      //margin-left: -225%;
     }
   }
 }

@@ -1,7 +1,14 @@
 .gallery {
-  background-color: $colorBgGrey;
-}
+  background-color: $colorWhite;
 
+  &:before {
+    background-image: none;
+  }
+
+  img {
+
+  }
+}
 
 /* LP Boxes */
 .lp-boxes {
