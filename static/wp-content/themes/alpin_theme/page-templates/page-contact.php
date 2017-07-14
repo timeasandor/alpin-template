@@ -24,7 +24,7 @@ $objPost = get_post(pll_get_post($post->ID));
     <div class="container">
         <div class="row">
             <div class="title">
-                <i class="blicon-notebook"></i>
+                <i class="blicon-wallet"></i>
                 <h1><?php echo $objPost->post_title; ?></h1>
             </div>
             <?php wpb_child_page($objPost->ID); ?>

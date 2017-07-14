@@ -377,6 +377,110 @@
   margin-top: 2em;
 }
 
+.overlay-gallery {
+  width: 100%;
+  height:100%;
+  position: fixed;
+  z-index: 1000;
+  overflow: hidden;
+  display: table;
+  left: 0;
+  top: 0;
+  background-color: rgba(68,78,88, 0.95);
+  visibility: hidden;
+  @include opacity(0);
+  @include transition-property(visibility, opacity);
+  @include transition-timing-function(ease);
+  @include transition-duration(1s);
+
+  &.active {
+    visibility: visible;
+    @include opacity(1);
+  }
+}
+
+.overlay_swiper {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.swiper-container {
+  width: 100%;
+  max-width: 1044px;
+  //max-width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.swiper-wrapper {
+  box-sizing: content-box;
+  @include display-flex;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+  width: 100%;
+  z-index: 1;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  /* Center slide text vertically */
+  @include display-flex;
+  @include justify-content(center);
+  @include align-items(center);
+
+  flex-shrink: 0;
+  height: 100%;
+  position: relative;
+  width: 100%;
+
+}
+.close-btn {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 20px;
+  top: 120px;
+  display: block;
+  z-index: 300;
+  cursor: pointer;
+
+  i {
+    &:before {
+      font-size: 50px;
+      color: $colorWhite;
+    }
+  }
+}
+
+.b-prev, .b-next {
+  background-repeat: no-repeat;
+  cursor: pointer;
+  height: 60px;
+  position: absolute;
+  top: 500px;
+  width: 30px;
+  z-index: 300;
+
+  i {
+    &:before {
+      font-size: 40px;
+      color: $colorWhite;
+    }
+  }
+}
+.b-next {
+  right: 35px;
+}
+.b-prev {
+  left: 35px;
+}
+
+
 @media only  screen and (max-width: $for_tablet) {
   .lp-boxes.lp-boxes-rows-4 .lp-box {
     width: 50%;

@@ -44,8 +44,8 @@ if ( $the_query->have_posts() ) : ?>
 
                         <div class="lp-box box<?php echo $i; ?> ">
                             <div class="lp-box-image lpbox-rnd8">
-                                <?php the_post_thumbnail('gallery-single-thumb'); ?>
-                                <div class="lp-box-overlay"></div>
+                                <?php the_post_thumbnail('gallery-single-thumb', array('tabindex'=>$i)); ?>
+                                <!--<div class="lp-box-overlay"></div>-->
                             </div>
                             <div class="lp-box-content">
                                 <h5 class="lp-box-title"><?php the_title(); ?></h5>
@@ -63,6 +63,19 @@ if ( $the_query->have_posts() ) : ?>
             ?>
         </div>
     </div><!-- .lp-boxes -->
+
+<div class="overlay-gallery">
+    <div class="overlay_swiper"></div>
+    <div class="b-prev">
+        <i class="blicon-arrow-left"></i>
+    </div>
+    <div class="b-next">
+        <i class="blicon-arrow-right"></i>
+    </div>
+    <div class="close-btn">
+        <i class="blicon-cross2"></i>
+    </div>
+</div>
 
 <?php
 else:

@@ -1,6 +1,7 @@
 var customSwiper = (function(){
 
     function bindEvents(){
+
     }
 
     function init(){

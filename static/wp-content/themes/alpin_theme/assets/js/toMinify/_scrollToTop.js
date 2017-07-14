@@ -78,6 +78,14 @@ var scrollToTop = (function(){
                 $('.logo').show();
             });
         });
+        $('.menu-mob ul li a').on('click', function(){
+            $('#mobile-menu').animate({
+                left: "100%"
+            }, 500, function(){
+                $(this).css("left","-100%").hide();
+                $('.logo').show();
+            });
+        });
     }
 
 

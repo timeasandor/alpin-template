@@ -43,3 +43,23 @@
     }
   }
 }
+
+.page-footer {
+  background-color: $colorTextHover;
+
+  .logo-small {
+    padding: 10px;
+    img {
+      width: 130px;
+      height: auto;
+    }
+    span {
+      color: $colorWhite;
+      font-size: 0.875em;
+    }
+  }
+
+  .socials {
+    float: right;
+  }
+}

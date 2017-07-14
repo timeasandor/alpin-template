@@ -499,6 +499,38 @@ a.f_btn:hover:before,
 	transition: all .3s ease-in-out;
 }
 
+/* line 47, ../sass/_setup/_footer.scss */
+
+.page-footer {
+	background-color: #495d6d;
+}
+
+/* line 50, ../sass/_setup/_footer.scss */
+
+.page-footer .logo-small {
+	padding: 10px;
+}
+
+/* line 52, ../sass/_setup/_footer.scss */
+
+.page-footer .logo-small img {
+	width: 130px;
+	height: auto;
+}
+
+/* line 56, ../sass/_setup/_footer.scss */
+
+.page-footer .logo-small span {
+	color: #ffffff;
+	font-size: 0.875em;
+}
+
+/* line 62, ../sass/_setup/_footer.scss */
+
+.page-footer .socials {
+	float: right;
+}
+
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -2319,6 +2351,145 @@ img {
 	margin-top: 2em;
 }
 
+/* line 380, ../sass/_block/_block_gallery.scss */
+
+.overlay-gallery {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 1000;
+	overflow: hidden;
+	display: table;
+	left: 0;
+	top: 0;
+	background-color: rgba(68, 78, 88, 0.95);
+	visibility: hidden;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-moz-transition-property: visibility, opacity;
+	-o-transition-property: visibility, opacity;
+	-webkit-transition-property: visibility, opacity;
+	transition-property: visibility, opacity;
+	-moz-transition-timing-function: ease;
+	-o-transition-timing-function: ease;
+	-webkit-transition-timing-function: ease;
+	transition-timing-function: ease;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-webkit-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+/* line 396, ../sass/_block/_block_gallery.scss */
+
+.overlay-gallery.active {
+	visibility: visible;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+/* line 402, ../sass/_block/_block_gallery.scss */
+
+.overlay_swiper {
+	padding-top: 100px;
+	text-align: center;
+}
+
+/* line 407, ../sass/_block/_block_gallery.scss */
+
+.swiper-container {
+	width: 100%;
+	max-width: 1044px;
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+
+/* line 418, ../sass/_block/_block_gallery.scss */
+
+.swiper-wrapper {
+	box-sizing: content-box;
+	display: -webkit-flex;
+	display: flex;
+	height: 100%;
+	position: relative;
+	transition-property: transform;
+	width: 100%;
+	z-index: 1;
+}
+
+/* line 428, ../sass/_block/_block_gallery.scss */
+
+.swiper-slide {
+	text-align: center;
+	background: #fff; /* Center slide text vertically */
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	flex-shrink: 0;
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
+
+/* line 442, ../sass/_block/_block_gallery.scss */
+
+.close-btn {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 20px;
+	top: 120px;
+	display: block;
+	z-index: 300;
+	cursor: pointer;
+}
+
+/* line 453, ../sass/_block/_block_gallery.scss */
+
+.close-btn i:before {
+	font-size: 50px;
+	color: #ffffff;
+}
+
+/* line 460, ../sass/_block/_block_gallery.scss */
+
+.b-prev,
+.b-next {
+	background-repeat: no-repeat;
+	cursor: pointer;
+	height: 60px;
+	position: absolute;
+	top: 500px;
+	width: 30px;
+	z-index: 300;
+}
+
+/* line 470, ../sass/_block/_block_gallery.scss */
+
+.b-prev i:before,
+.b-next i:before {
+	font-size: 40px;
+	color: #ffffff;
+}
+
+/* line 476, ../sass/_block/_block_gallery.scss */
+
+.b-next {
+	right: 35px;
+}
+
+/* line 479, ../sass/_block/_block_gallery.scss */
+
+.b-prev {
+	left: 35px;
+}
+
 /* line 2, ../sass/_block/_block_contact.scss */
 
 .contact .fleft {
@@ -2348,6 +2519,12 @@ img {
 
 /* line 20, ../sass/_block/_block_contact.scss */
 
+label {
+	display: none;
+}
+
+/* line 24, ../sass/_block/_block_contact.scss */
+
 input,
 textarea {
 	opacity: 0.9;
@@ -2355,48 +2532,39 @@ textarea {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
 	font-weight: 400;
-	font-size: 18px;
+	font-size: 1em;
 	border-radius: 0;
-	line-height: 22px;
-	background-color: #eeeff0;
-	border: 3px solid #eeeff0;
+	line-height: 1.2;
+	border-bottom: 2px solid #495d6d;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
 	padding: 10px;
 	margin-bottom: 10px;
 	width: 100%;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
 }
 
-/* line 35, ../sass/_block/_block_contact.scss */
+/* line 40, ../sass/_block/_block_contact.scss */
 
 input:focus,
 textarea:focus {
-	background-color: #ffffff;
 	box-shadow: 0;
-	border: 3px solid #24a7cf;
+	border-bottom: 2px solid #24a7cf;
 	color: #24a7cf;
 	outline: none;
 }
 
-/* line 42, ../sass/_block/_block_contact.scss */
-
-input:hover,
-textarea:hover {
-	background-color: #ffffff;
-}
-
-/* line 48, ../sass/_block/_block_contact.scss */
+/* line 53, ../sass/_block/_block_contact.scss */
 
 input[type=submit] {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
 	float: left;
-	border: #eeeff0 solid 3px;
+	border: #495d6d solid 2px;
 	cursor: pointer;
-	background-color: #24a7cf;
-	color: #ffffff;
-	font-size: 24px;
+	background-color: #ffffff;
+	color: #495d6d;
+	font-size: 1.125em;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	-moz-transition-property: all;
@@ -2409,11 +2577,11 @@ input[type=submit] {
 	transition-duration: 0.3s;
 }
 
-/* line 61, ../sass/_block/_block_contact.scss */
+/* line 66, ../sass/_block/_block_contact.scss */
 
 input[type=submit]:hover {
-	background-color: transparent;
-	color: #24a7cf;
+	background-color: #495d6d;
+	color: #eeeff0;
 }
 
 /* line 10, ../sass/_block/_block_page_transition.scss */
@@ -3482,7 +3650,7 @@ input[type=submit]:hover {
 
 @media only screen and (max-width: 1024px) {
 
-/* line 381, ../sass/_block/_block_gallery.scss */
+/* line 485, ../sass/_block/_block_gallery.scss */
 
 .lp-boxes.lp-boxes-rows-4 .lp-box {
 	width: 50%;
@@ -3546,6 +3714,12 @@ input[type=submit]:hover {
 	display: flex;
 }
 
+/* line 74, ../sass/_block/_block_contact.scss */
+
+.contact .adr_wrap {
+	padding-left: 0;
+}
+
 }
 
 @media only screen and (max-width: 576px) {
@@ -3563,7 +3737,7 @@ input[type=submit]:hover {
 	padding-bottom: 20px;
 }
 
-/* line 387, ../sass/_block/_block_gallery.scss */
+/* line 491, ../sass/_block/_block_gallery.scss */
 
 .lp-boxes.lp-boxes-rows-4 .lp-box {
 	width: 100%;
