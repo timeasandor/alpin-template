@@ -4,8 +4,6 @@ var overlay = (function(){
     var this_articles;
     var t_gallery = null;
     var actual_index;
-    var card;
-    var card_id = 0;
 
 
     var onClose = function(){
@@ -18,7 +16,6 @@ var overlay = (function(){
         var output='<div class="swiper-container">';
 
         this_articles = parent.find('img');
-        console.log(parent);
 
         nr_slides = this_articles.length;
 
