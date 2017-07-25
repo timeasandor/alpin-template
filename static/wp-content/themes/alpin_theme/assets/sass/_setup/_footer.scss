@@ -1,5 +1,5 @@
 #toTop {
-  display: block;
+  //display: block;
   position: fixed;
   right: -100px;
   bottom: 1em;
@@ -17,6 +17,7 @@
   background-color: rgba(250,250,250,0.8);
   border: 1px solid rgba(0, 0, 0, .1);
   color: #0085b2;
+  display: none;
 
   &:hover {
     background-color: #24a7cf;
@@ -45,7 +46,7 @@
 }
 
 .page-footer {
-  background-color: $colorTextHover;
+  background-color: #414547;
 
   .logo-small {
     padding: 10px;

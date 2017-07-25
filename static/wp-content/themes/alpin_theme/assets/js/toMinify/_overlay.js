@@ -19,7 +19,7 @@ var overlay = (function(){
 
         nr_slides = this_articles.length;
 
-        output+='<div class="swiper-wrapper" style="width:80%;">';
+        output+='<div class="swiper-wrapper">';
 
         for (var i=0;i<nr_slides;i++) {
             var this_img = $(this_articles[i]).attr("src");

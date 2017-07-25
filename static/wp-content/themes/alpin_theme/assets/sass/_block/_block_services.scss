@@ -39,7 +39,6 @@
 
         &:before {
           content: "\f078";
-          //content: "\e9bd";
           color: $colorBrandHighlight;
           font-size: 0.8em;
           @include fontIcon();

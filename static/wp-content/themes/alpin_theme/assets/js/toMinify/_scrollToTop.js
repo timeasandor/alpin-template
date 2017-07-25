@@ -4,7 +4,7 @@ var scrollToTop = (function(){
 
         $(window).scroll(function(){
 
-            if($(this).scrollTop() > 100) {
+            if($(this).scrollTop() > 50) {
                 $('#site-header-main').addClass('header-fixed');
                 $('.logo').css('visibility', 'visible');
                 $('#toTop').fadeIn();
@@ -17,12 +17,9 @@ var scrollToTop = (function(){
 
         //Click event to scroll to top
         $('#toTop').click(function(){
-            $('html, body').animate({scrollTop : 0},800);
+            $('html, body').animate({scrollTop : -40},800);
             return false;
         });
-
-        //init skrollr
-        //var s = skrollr.init();
 
     }
 

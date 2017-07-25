@@ -17,13 +17,13 @@ if( !defined( 'ABSPATH' ) ) {
             <div class="page-footer">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-6 col-xs-12">
+                        <div class="col-sm-8 col-xs-12">
                             <div class="logo-small">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/narlukada_logo_white.png" alt="">
                                 <span>&copy;2017 Narlukada Alpin. All right reserved.</span>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-xs-12">
+                        <div class="col-sm-3 hidden-xs">
                             <?php wp_nav_menu(array(
                             'theme_location' => 'social-menu',
                             'items_wrap'     => '<nav id="sheader" class="socials">%3$s<div class="clear"></div></nav>',
@@ -44,6 +44,9 @@ if( !defined( 'ABSPATH' ) ) {
         </footer>
 
         <?php wp_footer(); ?>
+
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/app.min.js"></script>
 
     </body>
 </html>

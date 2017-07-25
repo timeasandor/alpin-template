@@ -33,8 +33,6 @@ module.exports = function(grunt) {
             custom: {
                 files: {
                     'js/app.min.js': [
-                        'js/toMinify/_resize.js',
-                        'js/toMinify/_swiper.js',
                         'js/toMinify/_scrollToTop.js',
                         'js/toMinify/_overlay.js'
                     ]
@@ -46,11 +44,7 @@ module.exports = function(grunt) {
                         'js/toMinify/vendor/jquery.min.js',
                         'js/toMinify/vendor/modernizr.custom.92950.js',
                         'js/toMinify/vendor/swiper.jquery.min.js',
-                        //'js/toMinify/vendor/skrollr.min.js'
-                        'js/toMinify/vendor/jquery.easing.min.js',
-                        //'js/toMinify/vendor/scrolling-nav.js',
-                        'js/toMinify/vendor/bootstrap.min.js',
-                        'js/toMinify/vendor/bootstrap.js'
+                        'js/toMinify/vendor/jquery.easing.min.js'
                     ]
                 }
             }

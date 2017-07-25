@@ -30,23 +30,22 @@
   }
 }
 
-.bcg {
- // position: relative;
-}
-
 .home {
-  //height: 100%;
-  //width: 100%;
+  height: 100%;
+  width: 100%;
   position: relative;
+
+  img.bgImg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+  }
 }
 
 img {
-  width: 100%;
-  height: auto;
-}
-
-.navbar {
-  //height: 80px;
+  //width: 100%;
+  //height: auto;
 }
 
 .logo {
@@ -130,7 +129,6 @@ img {
   bottom: 0;
   line-height: 2em;
   width: 100%;
-  //height: 70%;
   padding: 2em;
   background-color: $colorWhite;
 
@@ -207,7 +205,7 @@ img {
   span {
     &:before {
       content: "\e871";
-      font-size: 24px;
+      font-size: 34px;
       @include fontFluida();
     }
   }
@@ -222,11 +220,33 @@ img {
   z-index: 3;
   left: 0;
   right: 0;
-  top: 80%;
+  top: 70%;
   bottom: auto;
-  @include transform(translateY(-50%));
   color: $colorWhite;
-  text-align: center;
+
+  img {
+    max-width: 150px;
+    height: auto;
+    @include animation-properties((animation-name: moveUp));
+    @include animation-properties((animation-duration: 1.5s));
+    @include animation-properties((animation-timing-function: ease));
+    @include animation-properties((animation-fill-mode: forwards));
+    @include animation-properties((animation-delay: 1s));
+    visibility: hidden;
+
+    @keyframes moveUppp {
+      0% {
+        @include transform(translate(0,0));
+      }
+
+
+      100% {
+        @include transform(translate(0, -100px));
+        visibility: visible;
+      }
+    }
+
+  }
 
 
   h1 {
@@ -238,7 +258,7 @@ img {
     @include animation-properties((animation-duration: 1.5s));
     @include animation-properties((animation-timing-function: ease));
     @include animation-properties((animation-fill-mode: forwards));
-    @include animation-properties((animation-delay: 1s));
+    @include animation-properties((animation-delay: 1.5s));
     visibility: hidden;
 
     @keyframes moveUp {
@@ -261,7 +281,7 @@ img {
     @include animation-properties((animation-name: moveUpp));
     @include animation-properties((animation-duration: 1.5s));
     @include animation-properties((animation-timing-function: ease));
-    @include animation-properties((animation-delay: 1.5s));
+    @include animation-properties((animation-delay: 2s));
     @include animation-properties((animation-fill-mode: forwards));
 
     @keyframes moveUpp {
@@ -304,7 +324,7 @@ img {
       }
       &.active {
         color: $colorBrandHighlight;
-        border-bottom: 2px solid $colorBrandHighlight;
+        border-bottom: 2px solid $colorYellow;
       }
     }
     .socials {
@@ -359,31 +379,6 @@ img {
     }
   }
 }
-@media only  screen and (max-width: $for_laptop) {
-  .home {
-   // height: 100%;
-
-    .bgImg {
-     // height: 100%;
-     // width: auto;
-    }
-
-    .logo {
-      img {
-        width: 100%;
-        height: auto;
-      }
-    }
-  }
-}
-
-@media only  screen and (max-width: $for_bootstrap_lg) {
-  .home {
-    .bgImg {
-     // margin-left: -20%;
-    }
-  }
-}
 
 @media only  screen and (max-width: $for_bootstrap_md) {
   .menu-desktop ul li a {
@@ -395,19 +390,8 @@ img {
   .logo {
     margin-top: 20px;
   }
-  .home {
-    .bgImg {
-      //margin-left: -35%;
-    }
-  }
 }
 @media only  screen and (max-width: $for_bootstrap_sm) {
-
-  .home {
-    .bgImg {
-     // margin-left: -70%;
-    }
-  }
 
   #nav-toggle {
     display: block;
@@ -417,38 +401,12 @@ img {
     display: none;
   }
 
-  #site-header-main {
-    //background-color: $colorWhite;
-    //border-bottom: 1px solid $colorBrand;
-  }
   .socials {
     display: none;
   }
   .menu-mob {
     .socials {
       @include display-flex();
-    }
-  }
-}
-
-@media only  screen and (max-width: $for_bootstrap_xs) {
-  .home {
-    .bgImg {
-      //margin-left: -100%;
-    }
-  }
-}
-@media only  screen and (max-width: $for_mobile_portrait) {
-  .home {
-    .bgImg {
-      //margin-left: -150%;
-    }
-  }
-}
-@media only  screen and (max-width: $for_mobile_iphone) {
-  .home {
-    .bgImg {
-      //margin-left: -225%;
     }
   }
 }

@@ -75,6 +75,7 @@ $objPost = get_post(pll_get_post($post->ID));
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/narlukada_logo_white.png" alt="">
                 <h1>Alpinism Utilitar</h1>
                 <p>
                     &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet semper dolor.&rdquo;

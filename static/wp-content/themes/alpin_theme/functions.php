@@ -8,8 +8,13 @@ if( !defined( 'ABSPATH' ) ) {
 /************************* load css and javascript into the website's front-end *************************/
 function alpintheme_enqueue_files() {
     wp_enqueue_style('customstyle', get_template_directory_uri() . '/assets/css/style.raw.css', array(), '1.0.0', 'all');
-    wp_enqueue_script('customjs', get_template_directory_uri() . '/assets/js/vendor.min.js', array(), '1.0.0', true);
-    wp_enqueue_script('customjss', get_template_directory_uri() . '/assets/js/app.min.js', array(), '1.0.0', true);
+
+   // wp_enqueue_script('customjs-jquery', get_template_directory_uri() . '/assets/js/toMinify/vendor/jquery.min.js', array(), '1.0.0', true);
+   //  wp_enqueue_script('customjs-swiper', get_template_directory_uri() . '/assets/js/toMinify/vendor/swiper.jquery.min.js', array(), '1.0.0', true);
+
+
+   // wp_enqueue_script('customjs', get_template_directory_uri() . '/assets/js/vendor.min.js', array(), '1.0.0', true);
+   // wp_enqueue_script('customjss', get_template_directory_uri() . '/assets/js/app.min.js', array(), '1.0.0', true);
 }
 add_action( 'wp_enqueue_scripts', 'alpintheme_enqueue_files' );
 

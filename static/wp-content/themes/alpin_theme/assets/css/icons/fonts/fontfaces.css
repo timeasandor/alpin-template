@@ -175,7 +175,6 @@
 .socials a[href*="lanyrd.com"]:before, .socials a.lanyrd:before { content: '\e80b'; }
 .socials a.calendar:before { content: '\e80c'; }
 .socials a[href*="stumbleupon.com"]:before, .socials a.stumbleupon:before { content: '\e80d'; }
-.socials a[href*="500px.com"]:before, .socials a.\35 00px:before { content: '\e80e'; }
 .socials a[href*="pinterest.com"]:before, .socials a.pinterest:before { content: '\e80f'; }
 .socials a.bitcoin:before { content: '\e810'; }
 .socials a.firefox:before { content: '\e811'; }
@@ -184,7 +183,6 @@
 .socials a.ie:before, .socials a.internetexplorer { content: '\e814'; }
 .socials a[href^="tel:"]:before, .socials a.phone:before { content: '\e815'; }
 .socials a[href*="grooveshark.im"]:before, .socials a.grooveshark:before { content: '\e816'; }
-.socials a[href*="99designs.com"]:before, .socials a.\39 9designs:before { content: '\e817'; }
 .socials a.code:before { content: '\e818'; }
 .socials a[href*="digg.com"]:before, .socials a.digg:before { content: '\e819'; }
 .socials a[href*="spotify.com"]:before, .socials a.spotify:before { content: '\e81a'; }
