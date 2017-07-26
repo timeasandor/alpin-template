@@ -1,6 +1,12 @@
-.service {
-  width: 100%;
-  overflow-x: hidden;
+.section {
+  &.service {
+    width: 100%;
+    overflow-x: hidden;
+
+    &:after {
+      background-image: none;
+    }
+  }
 }
 
 .lp-block {

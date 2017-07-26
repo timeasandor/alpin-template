@@ -38,13 +38,16 @@ if ( $the_query->have_posts() ) : ?>
                 $i = 1;
                 while ( $the_query->have_posts() ) : $the_query->the_post(); 
                     if (has_post_thumbnail( $the_query->ID ) ):
-//                        $image = wp_get_attachment_image_src(get_post_thumbnail_id($the_query->ID));
+                           $image = wp_get_attachment_image_src(get_post_thumbnail_id($the_query->ID));
+
+            //var_dump($image);
+
                         //$image = the_post_thumbnail('gallery-single-thumb');
                         ?>
 
                         <div class="lp-box box<?php echo $i; ?> ">
                             <div class="lp-box-image lpbox-rnd8">
-                                <?php the_post_thumbnail('gallery-single-thumb', array('tabindex'=>$i)); ?>
+                                <?php the_post_thumbnail('gallery-single-thumb', array('tabindex'=>$i, 'data-enlarge'=>$image[0])); ?>
                                 <!--<div class="lp-box-overlay"></div>-->
                             </div>
                             <div class="lp-box-content">

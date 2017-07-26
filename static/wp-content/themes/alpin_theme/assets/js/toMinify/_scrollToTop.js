@@ -15,6 +15,11 @@ var scrollToTop = (function(){
             }
         });
 
+        $(window).on('load', function () {
+            $('#site-header-main').addClass('header-fixed');
+            $('.logo').css('visibility', 'visible');
+        });
+
         //Click event to scroll to top
         $('#toTop').click(function(){
             $('html, body').animate({scrollTop : -40},800);

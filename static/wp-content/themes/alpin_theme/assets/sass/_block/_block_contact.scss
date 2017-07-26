@@ -76,27 +76,15 @@ input[type=submit]{
     li {
       list-style: none;
 
-
-      &:first-child {
-        i {
-          &:before {
-            content: "\e93e";
-          }
-        }
+      i {
+        padding-right: 10px;
       }
-      &:nth-child(2) {
-        i {
-          &:before {
-            content: "\e93e";
-          }
-        }
-      }
+      a {
+        color: $colorTextHover;
+        text-decoration: none;
 
-      &:nth-child(3){
-        i {
-          &:before {
-            content: "\e945";
-          }
+        &:hover {
+          text-decoration: underline;
         }
       }
     }

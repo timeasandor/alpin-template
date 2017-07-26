@@ -22,14 +22,10 @@ $objPost = get_post(pll_get_post($post->ID));
 <div class="col-sm-6 col-xs-12 fright">
     <div class="adr_wrap">
         <div class="content">
-            <ul>
-                <li>
-                    <i></i><?php echo nl2br($objPost->post_content); ?>
-                </li>
+                    <?php echo nl2br($objPost->post_content); ?>
                 <!--<i class="blicon-location"></i>-->
                     <!--<i class="blicon-phone"></i>-->
                     <!--<i class="blicon-mail"></i>-->
-            </ul>
         </div>
     </div>
 </div>

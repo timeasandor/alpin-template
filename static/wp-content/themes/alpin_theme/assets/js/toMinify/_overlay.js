@@ -22,7 +22,7 @@ var overlay = (function(){
         output+='<div class="swiper-wrapper">';
 
         for (var i=0;i<nr_slides;i++) {
-            var this_img = $(this_articles[i]).attr("src");
+            var this_img = $(this_articles[i]).attr("data-enlarge");
 
             if (typeof(this_img) !== "undefined") {
                 output+='<div class="swiper-slide"><img src="'+this_img+'" alt=""></div>';
