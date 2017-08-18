@@ -36,7 +36,7 @@ if ( $the_query->have_posts() ) : ?>
 
             <?php
                 $i = 1;
-                while ( $the_query->have_posts() ) : $the_query->the_post(); 
+                while ( $the_query->have_posts() ) : $the_query->the_post();
                     if (has_post_thumbnail( $the_query->ID ) ):
                            $image = wp_get_attachment_image_src(get_post_thumbnail_id($the_query->ID));
 
@@ -59,10 +59,10 @@ if ( $the_query->have_posts() ) : ?>
                                 </div>
                             </div>
                         </div><!-- lp-box -->
-                        <?php 
+                        <?php
                         $i++;
                     endif;
-                endwhile; 
+                endwhile;
             ?>
         </div>
     </div><!-- .lp-boxes -->
