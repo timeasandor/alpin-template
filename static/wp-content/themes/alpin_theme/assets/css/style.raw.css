@@ -2455,7 +2455,7 @@ th {
 
 .swiper-slide {
 	text-align: center;
-	background-color: rgba(0, 0, 0, 0.85);
+	background-color: black;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-justify-content: center;
@@ -2555,13 +2555,13 @@ th {
 	padding-left: 10%;
 }
 
-/* line 20, ../sass/_block/_block_contact.scss */
+/* line 24, ../sass/_block/_block_contact.scss */
 
-label {
-	display: none;
+textarea {
+	height: 80px;
 }
 
-/* line 24, ../sass/_block/_block_contact.scss */
+/* line 28, ../sass/_block/_block_contact.scss */
 
 input,
 textarea {
@@ -2582,7 +2582,7 @@ textarea {
 	width: 100%;
 }
 
-/* line 40, ../sass/_block/_block_contact.scss */
+/* line 44, ../sass/_block/_block_contact.scss */
 
 input:focus,
 textarea:focus {
@@ -2592,7 +2592,7 @@ textarea:focus {
 	outline: none;
 }
 
-/* line 52, ../sass/_block/_block_contact.scss */
+/* line 56, ../sass/_block/_block_contact.scss */
 
 input[type=submit] {
 	font-family: 'Open Sans', sans-serif;
@@ -2615,40 +2615,40 @@ input[type=submit] {
 	transition-duration: 0.3s;
 }
 
-/* line 65, ../sass/_block/_block_contact.scss */
+/* line 69, ../sass/_block/_block_contact.scss */
 
 input[type=submit]:hover {
 	background-color: #495d6d;
 	color: #eeeff0;
 }
 
-/* line 72, ../sass/_block/_block_contact.scss */
+/* line 76, ../sass/_block/_block_contact.scss */
 
 .adr_wrap ul {
 	margin: 0;
 	padding: 0;
 }
 
-/* line 76, ../sass/_block/_block_contact.scss */
+/* line 80, ../sass/_block/_block_contact.scss */
 
 .adr_wrap ul li {
 	list-style: none;
 }
 
-/* line 79, ../sass/_block/_block_contact.scss */
+/* line 83, ../sass/_block/_block_contact.scss */
 
 .adr_wrap ul li i {
 	padding-right: 10px;
 }
 
-/* line 82, ../sass/_block/_block_contact.scss */
+/* line 86, ../sass/_block/_block_contact.scss */
 
 .adr_wrap ul li a {
 	color: #495d6d;
 	text-decoration: none;
 }
 
-/* line 86, ../sass/_block/_block_contact.scss */
+/* line 90, ../sass/_block/_block_contact.scss */
 
 .adr_wrap ul li a:hover {
 	text-decoration: underline;
@@ -3773,7 +3773,7 @@ input[type=submit]:hover {
 	display: flex;
 }
 
-/* line 96, ../sass/_block/_block_contact.scss */
+/* line 100, ../sass/_block/_block_contact.scss */
 
 .contact .adr_wrap {
 	padding-left: 0;
