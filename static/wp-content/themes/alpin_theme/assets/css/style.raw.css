@@ -2577,7 +2577,7 @@ textarea {
 	border-top: 0;
 	border-left: 0;
 	border-right: 0;
-	padding: 10px;
+	padding: 10px 0;
 	margin-bottom: 10px;
 	width: 100%;
 }
@@ -2592,7 +2592,15 @@ textarea:focus {
 	outline: none;
 }
 
-/* line 56, ../sass/_block/_block_contact.scss */
+/* line 55, ../sass/_block/_block_contact.scss */
+
+input::placeholder,
+textarea::placeholder {
+	content: '';
+	color: transparent;
+}
+
+/* line 61, ../sass/_block/_block_contact.scss */
 
 input[type=submit] {
 	font-family: 'Open Sans', sans-serif;
@@ -2615,40 +2623,40 @@ input[type=submit] {
 	transition-duration: 0.3s;
 }
 
-/* line 69, ../sass/_block/_block_contact.scss */
+/* line 74, ../sass/_block/_block_contact.scss */
 
 input[type=submit]:hover {
 	background-color: #495d6d;
 	color: #eeeff0;
 }
 
-/* line 76, ../sass/_block/_block_contact.scss */
+/* line 81, ../sass/_block/_block_contact.scss */
 
 .adr_wrap ul {
 	margin: 0;
 	padding: 0;
 }
 
-/* line 80, ../sass/_block/_block_contact.scss */
+/* line 85, ../sass/_block/_block_contact.scss */
 
 .adr_wrap ul li {
 	list-style: none;
 }
 
-/* line 83, ../sass/_block/_block_contact.scss */
+/* line 88, ../sass/_block/_block_contact.scss */
 
 .adr_wrap ul li i {
 	padding-right: 10px;
 }
 
-/* line 86, ../sass/_block/_block_contact.scss */
+/* line 91, ../sass/_block/_block_contact.scss */
 
 .adr_wrap ul li a {
 	color: #495d6d;
 	text-decoration: none;
 }
 
-/* line 90, ../sass/_block/_block_contact.scss */
+/* line 95, ../sass/_block/_block_contact.scss */
 
 .adr_wrap ul li a:hover {
 	text-decoration: underline;
@@ -3773,7 +3781,7 @@ input[type=submit]:hover {
 	display: flex;
 }
 
-/* line 100, ../sass/_block/_block_contact.scss */
+/* line 105, ../sass/_block/_block_contact.scss */
 
 .contact .adr_wrap {
 	padding-left: 0;
