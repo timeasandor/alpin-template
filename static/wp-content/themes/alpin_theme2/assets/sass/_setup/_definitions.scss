@@ -1,0 +1,116 @@
+/* breakpoints */
+$for_laptop:				1440px;
+$for_below_laptop:			1359px;
+$for_bootstrap_lg:	    	1200px;
+$for_tablet:				1024px;
+$for_bootstrap_md:	     	992px;
+$for_bootstrap_sm:	     	768px;
+$for_bootstrap_xs:		 	576px;
+
+$for_mobile_portrait:		 500px;
+$for_mobile_iphone: 		 380px;
+
+
+/* colors */
+$colorBrand:				#8e8e8e;
+$colorBrandHighlight:		#24a7cf;
+$colorBrandLight:			#b3afa9;
+$colorBrandHover:			red;
+$colorHoverBg:				#8d8d8d;
+$colorText: 				#fcfff3;
+$colorTextHover:			#495d6d;
+$colorWhite:				#ffffff;
+$colorYellow:				#fff100;
+$colorBgGrey:				#eeeff0;
+
+/* z-index levels */
+$zindex_background:	 	10;
+$zindex_anim_elem:		50;
+$zindex_content:		100;
+$zindex_sticky:			200;
+$zindex_overlay:		300;
+
+/* animation durations */
+$hover_light: 0.2s;
+$hover_medium: 0.6s;
+
+
+/* ================= MIXINS ================= */
+@mixin pseudoElement() {
+	display:block;
+	content: ' ';
+}
+@mixin fontBrand {
+	font-family: 'FlamaCondensed-Medium', sans-serif;
+	font-weight:normal;
+}
+@mixin fontNormal {
+	font-family:"HalisRBook",sans-serif;
+	font-weight:normal;
+}
+@mixin fontBasic {
+	font-family: 'FlamaCondensed-Basic', sans-serif;
+	font-weight:normal;
+}
+
+@mixin fontBasicLight {
+	font-family:'Futura BT W01 Medium', sans-serif;
+	font-weight: normal;
+}
+
+@mixin fontBold {
+	font-family:"Open Sans Bold","Open Sans",Arial,sans-serif;
+	font-weight:700;
+}
+@mixin fontLight {
+	font-family: 'Open Sans', sans-serif;
+	font-weight:normal;
+}
+@mixin fontArial {
+	font-family:Arial,sans-serif;
+	font-weight:normal;
+}
+@mixin fontElusive {
+	font-family: 'elusive', sans-serif;
+	font-weight: normal;
+}
+@mixin fontSocials {
+	font-family: 'socials', sans-serif;
+	font-weight: normal;
+}
+@mixin fontFluida {
+	font-family: 'fluida-blocks', sans-serif;
+	font-weight: normal;
+}
+
+@mixin fontIcon {
+	font-family: 'iconmeta', sans-serif;
+	font-weight: normal;
+}
+
+@mixin font-smoothing($value: on) {
+	@if $value == on {
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+	@else {
+		-webkit-font-smoothing: subpixel-antialiased;
+		-moz-osx-font-smoothing: auto;
+	}
+}
+
+/* ================= SPRITES ================= */
+@mixin sprite($name) {
+	background-image:url('../images/sprites.png');
+	background-size:50px auto;
+	@if $name == arrow_right {
+		background-position:0 0;
+	} @else if $name == checkmark {
+		background-position:0px -50px;
+	} @else {
+		background-position:0 0;
+	}
+}
+
+
+@mixin keyframes($name) {  }

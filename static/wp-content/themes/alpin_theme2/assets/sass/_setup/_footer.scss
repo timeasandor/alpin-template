@@ -1,0 +1,66 @@
+#toTop {
+  //display: block;
+  position: fixed;
+  right: -100px;
+  bottom: 1em;
+  z-index: 251;
+  width: auto;
+  height: auto;
+  padding: .25em 1em;
+  font-size: 1.2em;
+  opacity: 0;
+  cursor: pointer;
+  box-shadow: 0 0 1px rgba(255, 255, 255, .1) inset;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  //background-color: rgba(230,228,230,0.8);
+  background-color: rgba(250,250,250,0.8);
+  border: 1px solid rgba(0, 0, 0, .1);
+  color: #0085b2;
+  display: none;
+
+  &:hover {
+    background-color: #24a7cf;
+    color: #FFFDFF;
+
+    .icon-back2top:before {
+      color: rgba(250,250,250,0.8);
+    }
+  }
+
+  &.toTop-show {
+    right: 1em;
+    opacity: 1;
+  }
+
+  .icon-back2top {
+    @include fontElusive();
+
+    &:before {
+      color: #0085b2;
+      content: '\e809';
+      -webkit-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+    }
+  }
+}
+
+.page-footer {
+  background-color: #414547;
+
+  .logo-small {
+    padding: 10px;
+    img {
+      width: 130px;
+      height: auto;
+    }
+    span {
+      color: $colorWhite;
+      font-size: 0.875em;
+    }
+  }
+
+  .socials {
+    float: right;
+  }
+}

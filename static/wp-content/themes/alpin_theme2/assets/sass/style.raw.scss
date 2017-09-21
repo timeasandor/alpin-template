@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+// Fonts
+//@import url("//fast.fonts.net/lt/1.css?apiType=css&c=2a339bd0-ac9f-4061-a7d6-0488c74f9cf4&fontids=1119900,1119912");
+@font-face{
+  font-family:"Futura BT W01 Medium";
+  src:url("fonts/1119900/7ed1bebb-81a9-4c57-9513-f0538c1b83fc.eot?#iefix");
+  src:url("fonts/1119900/7ed1bebb-81a9-4c57-9513-f0538c1b83fc.eot?#iefix") format("eot"),url("fonts/1119900/ddc0f223-a296-451a-8681-ad80508eb419.woff") format("woff"),url("fonts/1119900/c18fc865-7a4e-45d9-bbb0-4e4553cc4136.ttf") format("truetype"),url("fonts/1119900/71710047-b807-47eb-9874-7db8f4904492.svg#71710047-b807-47eb-9874-7db8f4904492") format("svg");
+}
+@font-face{
+  font-family:"FuturaBTW01-MediumConde";
+  src:url("fonts/1119912/d7b7328c-23d0-4f6c-98be-3a7611181175.eot?#iefix");
+  src:url("fonts/1119912/d7b7328c-23d0-4f6c-98be-3a7611181175.eot?#iefix") format("eot"),url("fonts/1119912/5731186c-06a5-4d3d-af89-62be92328ac3.woff") format("woff"),url("fonts/1119912/664e9ca7-e8dc-4bb2-a495-b944c8c0c2cd.ttf") format("truetype"),url("fonts/1119912/9651240a-4edc-45eb-9498-c6b5f894e53a.svg#9651240a-4edc-45eb-9498-c6b5f894e53a") format("svg");
+}
+
+@font-face {
+  font-family: 'FlamaCondensed-Medium';
+  src: url('fonts/FlamaCondensed-Medium.eot');
+  src: url('fonts/FlamaCondensed-Medium.eot?#iefix') format('embedded-opentype'),
+  url('fonts/FlamaCondensed-Medium.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'FlamaCondensed-Basic';
+  src: url('fonts/FlamaCondensed-Basic.eot');
+  src: url('fonts/FlamaCondensed-Basic.eot?#iefix') format('embedded-opentype'),
+  url('fonts/FlamaCondensed-Basic.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'HalisRBook';
+  src: url('fonts/2E7FD8_0_0.eot');
+  src: url('fonts/2E7FD8_0_0.eot?#iefix') format('embedded-opentype'),
+  url('fonts/2E7FD8_0_0.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'iconmeta';
+  src:  url('fonts/iconmeta.eot?o7tart');
+  src:  url('fonts/iconmeta.eot?o7tart#iefix') format('embedded-opentype'),
+  url('fonts/iconmeta.ttf?o7tart') format('truetype'),
+  url('fonts/iconmeta.woff?o7tart') format('woff'),
+  url('fonts/iconmeta.svg?o7tart#iconmeta') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url( 'icons/fonts/fontfaces.css' ); /* Import the fonts */
+
+@import 'compass/css3';
+@import "compass/css3/animation";
+
+@import '_setup/_definitions';
+@import '_setup/_main';
+@import '_setup/_buttons';
+@import '_setup/_footer';
+
+@import '_vendor/_bootstrap';
+
+@import '_block/_block_services';
+@import '_block/_block_home';
+@import '_block/_block_about';
+@import '_block/_block_gallery';
+@import '_block/_block_contact';
+@import '_block/_block_page_transition';

@@ -1,0 +1,72 @@
+.section {
+  &.service {
+    width: 100%;
+    overflow-x: hidden;
+
+    &:after {
+      background-image: none;
+    }
+    .block-picture {
+      img {
+        max-height: 300px;
+      }
+    }
+  }
+}
+
+.lp-block {
+  color: $colorTextHover;
+  //padding: 20px 0;
+  text-align: center;
+
+  i {
+    &:before {
+      color: $colorBrandHighlight;
+      font-size: 35px;
+
+      &:hover {
+        color: $colorTextHover;
+      }
+    }
+  }
+  .lp-block-title {
+    text-transform: uppercase;
+    font-size: 1em;
+    @include fontLight();
+    font-weight: bold;
+    margin: 1em 0;
+
+    &:hover {
+      color: $colorBrandHighlight;
+    }
+  }
+  .lp-block-content {
+    text-align: left;
+    ul {
+      li {
+        list-style: none;
+        line-height: 1.2;
+        padding: 5px;
+
+        &:before {
+          content: "\f078";
+          color: $colorBrandHighlight;
+          font-size: 0.8em;
+          @include fontIcon();
+          margin-right: 10px;
+        }
+        span {
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}
+.text-title {
+  color: $colorTextHover;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2em;
+  @include fontLight();
+  font-weight: bold;
+}
