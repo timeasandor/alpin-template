@@ -2,32 +2,6 @@
   position: relative;
   overflow: hidden;
 
-  //&:before {
-  //  display: block;
-  //  content: ' ';
-  //  position: absolute;
-  //  top: 0;
-  //  left: 0;
-  //  width: 100%;
-  //  height: 16px;
-  //  z-index: 10;
-  //  background-image: url("../images/shadow-narlukada.png");
-  //  background-repeat: no-repeat;
-  //  background-position: top center;
-  //}
-  //&:after {
-  //  display: block;
-  //  content: ' ';
-  //  position: absolute;
-  //  bottom: 0;
-  //  left: 0;
-  //  width: 100%;
-  //  height: 16px;
-  //  z-index: 101;
-  //  background-image: url("../images/shade_bottom_light_narlukada.png");
-  //  background-repeat: no-repeat;
-  //  background-position: top center;
-  //}
 }
 
 .home {
@@ -226,12 +200,12 @@
   z-index: 3;
   left: 0;
   right: 0;
-  top: 70%;
+  top: 57%;
   bottom: auto;
   color: $colorWhite;
 
   img {
-    max-width: 150px;
+    max-width: 50%;
     height: auto;
     @include animation-properties((animation-name: moveUp));
     @include animation-properties((animation-duration: 1.5s));
@@ -265,6 +239,8 @@
     @include animation-properties((animation-fill-mode: forwards));
     @include animation-properties((animation-delay: 1.5s));
     visibility: hidden;
+    margin-left: 4%;
+    font-size: 3em;
 
     @keyframes moveUp {
       0% {
@@ -400,5 +376,11 @@
     .socials {
       @include display-flex();
     }
+  }
+}
+@media only screen and (max-width: $for_bootstrap_xs){
+  .intro-text h1 {
+    font-size: 2em;
+    line-height: 1;
   }
 }
