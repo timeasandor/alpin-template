@@ -1827,9 +1827,6 @@ th {
 .about img {
 	width: 100%;
 	height: auto;
-	min-height: 100%;
-	position: absolute;
-	z-index: 0;
 }
 
 /* line 15, ../sass/_block/_block_about.scss */
@@ -2446,7 +2443,7 @@ th {
 	flex-shrink: 0;
 	position: relative;
 	width: 100%;
-	padding: 10%;
+	padding: 1%;
 }
 
 /* line 439, ../sass/_block/_block_gallery.scss */
