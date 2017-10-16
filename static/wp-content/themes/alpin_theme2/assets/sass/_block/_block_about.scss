@@ -3,6 +3,12 @@
   overflow: hidden;
   height: auto;
   position: relative;
+  background-color: #dbdbdb;
+  background-image: url("../images/about_us_1.png");
+  background-repeat: no-repeat;
+  background-size: auto 200px;
+  background-position: bottom center;
+
 
   img {
     width: 100%;
@@ -45,6 +51,18 @@
     position: static;
     width: 100%;
     max-height: 400px;
+    min-height: 212px;
     height: auto;
+  }
+}
+@media only screen and (max-width: $for_bootstrap_sm){
+  section.about {
+    .block-picture {
+      img {
+        width: auto;
+        @include transform(translate(-50%, 0));
+        margin-left: 50%;
+      }
+    }
   }
 }

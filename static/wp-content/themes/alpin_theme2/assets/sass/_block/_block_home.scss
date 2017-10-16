@@ -205,7 +205,7 @@
   color: $colorWhite;
 
   img {
-    max-width: 50%;
+    max-width: 40%;
     height: auto;
     @include animation-properties((animation-name: moveUp));
     @include animation-properties((animation-duration: 1.5s));
@@ -359,6 +359,11 @@
   }
 }
 @media only  screen and (max-width: $for_bootstrap_sm) {
+
+  .intro-text {
+    top: auto;
+    bottom: 0;
+  }
 
   #nav-toggle {
     display: block;

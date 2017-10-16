@@ -84,7 +84,7 @@ if ( $the_query->have_posts() ) : ?>
 	</section>
 <?php
 else:
-    echo 'no gallery items';
+	echo 'no gallery items';
 endif;
 
 get_footer();

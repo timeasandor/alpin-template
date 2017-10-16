@@ -3,7 +3,7 @@
  * The main template file
  */
 
-if (is_user_logged_in()):
+//if (is_user_logged_in()):
 	get_header();
 
 		/*if ( have_posts() ) :
@@ -11,7 +11,7 @@ if (is_user_logged_in()):
 			while ( have_posts() ) : the_post();
 				get_template_part( 'template-parts/content', get_post_format() );
 			endwhile;
-
+			
 		else :
 			
 			get_template_part( 'template-parts/content', 'none' );
@@ -19,7 +19,7 @@ if (is_user_logged_in()):
 		endif;*/
 
 	get_footer();
-else:
+/*else:
     ?>
     <div id="content">
 
@@ -27,4 +27,4 @@ else:
 
     </div><!-- end of #content -->
     <?php
-endif;
+endif;*/

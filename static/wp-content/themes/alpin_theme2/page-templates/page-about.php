@@ -23,7 +23,6 @@ get_header();
 
 <section class="section about">
 	<?php get_template_part( 'menu', '' );?>
-	<!--<?php echo get_the_post_thumbnail($objPost);?>-->
 
 	<div class="block-picture">
 		<?php echo get_the_post_thumbnail($objPost);?>
@@ -31,7 +30,7 @@ get_header();
 	
 	<div class="container middle">
 		<div class="row">
-			<div class="col-xs-12 main_pt100 main_pb75">
+			<div class="col-xs-12 main_pt100 main_pb100">
 				<div class="title">
 					<i class="blicon-book-open"></i>
 					<h1><?php echo $objPost->post_title; ?></h1>

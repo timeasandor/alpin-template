@@ -99,6 +99,9 @@ h2 {
 .main_pb75 {
   padding-bottom:75px;
 }
+.main_pb100 {
+  padding-bottom:100px;
+}
 
 .main_mb100 {
   margin-bottom: 100px;
@@ -158,6 +161,9 @@ h2 {
 @media only screen and (max-width: $for_bootstrap_sm) {
   .hidden-xs {
     display:none;
+  }
+  .main_pt100 {
+    padding-top: 50px;
   }
 }
 @media only screen and (max-width: $for_bootstrap_xs) {

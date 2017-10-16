@@ -192,3 +192,13 @@ function getCopyrightText() {
 	
 	return $copyrightText[pll_current_language()];
 }
+
+add_filter('wpseo_metadesc','change_yoast_description',100,1);
+function change_yoast_description() {
+	return WPSEO_Meta::get_value( 'metadesc', get_queried_object_id() );
+}
+
+add_filter('wpseo_metakey','change_yoast_keywords',100,1);
+function change_yoast_keywords() {
+	return WPSEO_Meta::get_value( 'metakeywords', get_queried_object_id() );
+}

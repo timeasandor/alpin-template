@@ -26,7 +26,7 @@ if( !defined( 'ABSPATH' ) ) {
                         <div class="col-sm-3 hidden-xs">
                             <?php wp_nav_menu(array(
                             'theme_location' => 'social-menu',
-                            'items_wrap'     => '<nav id="" class="socials">%3$s<div class="clear"></div></nav>',
+                            'items_wrap'     => '<nav class="socials">%3$s<div class="clear"></div></nav>',
                             'walker'         => new Alpin_Social_Menu_Walker(),
                             )); ?>
                         </div>

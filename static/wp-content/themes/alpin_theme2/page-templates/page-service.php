@@ -23,7 +23,6 @@ get_header();
 
 <section class="section service">
 	<?php get_template_part( 'menu', '' );?>
-
 	<div class="block-picture">
 		<?php echo get_the_post_thumbnail($objPost);?>
 	</div>

@@ -30,9 +30,9 @@ get_header();
 			<div class="row">
 				<div class="col-xs-12">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/narlukada_logo_white.png" alt="">
-					<h1><?php echo $objPost->post_title; ?></h1>
+					<h1><?php echo $objPost->post_content; ?></h1>
 					<p>
-						<?php echo $objPost->post_content; ?>
+						<?php //echo $objPost->post_content; ?>
 					</p>
 					<div class="clear"></div>
 				</div>
@@ -43,3 +43,6 @@ get_header();
 
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/app.min.js"></script>
+
+<?php
+wp_footer();

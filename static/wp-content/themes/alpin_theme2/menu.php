@@ -40,7 +40,7 @@
 				</a>
 
 				<?php wp_nav_menu(array(
-					'theme_location' => 'social-menu',
+					'theme_location' => 'social-menu', 
 					'items_wrap'     => '<nav class="socials col-sm-2 hidden-xs">%3$s<div class="clear"></div></nav>',
 					'walker'         => new Alpin_Social_Menu_Walker(), 
 				)); ?>
