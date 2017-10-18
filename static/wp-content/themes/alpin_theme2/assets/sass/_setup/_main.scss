@@ -158,6 +158,33 @@ h2 {
   margin:0 auto;
   overflow:hidden;
 }
+
+.block-picture {
+  position: relative;
+  &:after {
+    display: block;
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 16px;
+    z-index: 101;
+    background: url("../images/shade_bottom_light_narlukada.png") top center no-repeat;
+  }
+  &:before {
+    display: block;
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 16px;
+    z-index: 101;
+    background: url("../images/shadow-narlukada.png") top center no-repeat;
+  }
+}
+
 @media only screen and (max-width: $for_bootstrap_sm) {
   .hidden-xs {
     display:none;
