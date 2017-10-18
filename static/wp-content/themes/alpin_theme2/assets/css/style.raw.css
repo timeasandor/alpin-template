@@ -1853,23 +1853,29 @@ th {
 .about {
 	width: 100%;
 	overflow: hidden;
-	height: auto;
+	height: 100%;
 	position: relative;
 	background-color: #dbdbdb;
 	background-image: url("../images/about_us_1.png");
 	background-repeat: no-repeat;
-	background-size: auto 200px;
+	background-size: auto 270px;
 	background-position: bottom center;
 }
 
-/* line 13, ../sass/_block/_block_about.scss */
+/* line 12, ../sass/_block/_block_about.scss */
+
+.about .main_pb100 {
+	padding-bottom: 220px;
+}
+
+/* line 17, ../sass/_block/_block_about.scss */
 
 .about img {
 	width: 100%;
 	height: auto;
 }
 
-/* line 21, ../sass/_block/_block_about.scss */
+/* line 25, ../sass/_block/_block_about.scss */
 
 .about .content {
 	position: relative;
@@ -1877,7 +1883,7 @@ th {
 	max-width: 1200px;
 }
 
-/* line 27, ../sass/_block/_block_about.scss */
+/* line 31, ../sass/_block/_block_about.scss */
 
 .about .text-title {
 	color: #495d6d;
@@ -1886,7 +1892,7 @@ th {
 	text-align: center;
 }
 
-/* line 33, ../sass/_block/_block_about.scss */
+/* line 37, ../sass/_block/_block_about.scss */
 
 .about .text-content {
 	color: #495d6d;
@@ -1894,20 +1900,20 @@ th {
 	padding: 5px;
 }
 
-/* line 39, ../sass/_block/_block_about.scss */
+/* line 43, ../sass/_block/_block_about.scss */
 
 .title {
 	text-align: center;
 }
 
-/* line 43, ../sass/_block/_block_about.scss */
+/* line 47, ../sass/_block/_block_about.scss */
 
 .title i:before {
 	color: #24a7cf;
 	font-size: 35px;
 }
 
-/* line 50, ../sass/_block/_block_about.scss */
+/* line 54, ../sass/_block/_block_about.scss */
 
 .block-picture img {
 	position: static;
@@ -3844,7 +3850,7 @@ input[type=submit]:hover {
 	display: flex;
 }
 
-/* line 61, ../sass/_block/_block_about.scss */
+/* line 65, ../sass/_block/_block_about.scss */
 
 section.about .block-picture img {
 	width: auto;
@@ -3853,6 +3859,12 @@ section.about .block-picture img {
 	-webkit-transform: translate(-50%, 0);
 	transform: translate(-50%, 0);
 	margin-left: 50%;
+}
+
+/* line 71, ../sass/_block/_block_about.scss */
+
+section.about .main_pb100 {
+	padding-bottom: 30%;
 }
 
 /* line 108, ../sass/_block/_block_contact.scss */
@@ -3885,10 +3897,10 @@ section.about .block-picture img {
 	line-height: 1;
 }
 
-/* line 70, ../sass/_block/_block_about.scss */
+/* line 77, ../sass/_block/_block_about.scss */
 
 section.about {
-	background-size: auto 140px;
+	background-size: auto 200px;
 }
 
 /* line 499, ../sass/_block/_block_gallery.scss */

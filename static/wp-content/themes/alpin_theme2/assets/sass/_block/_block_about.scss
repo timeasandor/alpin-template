@@ -1,13 +1,17 @@
 .about {
   width: 100%;
   overflow: hidden;
-  height: auto;
+  height: 100%;
   position: relative;
   background-color: #dbdbdb;
   background-image: url("../images/about_us_1.png");
   background-repeat: no-repeat;
-  background-size: auto 200px;
+  background-size: auto 270px;
   background-position: bottom center;
+
+  .main_pb100 {
+    padding-bottom: 220px;
+  }
 
 
   img {
@@ -64,10 +68,13 @@
         margin-left: 50%;
       }
     }
+    .main_pb100 {
+      padding-bottom: 30%;
+    }
   }
 }
 @media only screen and (max-width: $for_bootstrap_xs){
   section.about {
-    background-size: auto 140px;
+    background-size: auto 200px;
   }
 }
