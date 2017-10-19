@@ -54,8 +54,9 @@ var overlay = (function(){
 
     var onClick = function(){
 
-        $(".lp-boxes").on("click","img",function() {
-            actual_index = ($(this).attr('tabindex') - 1);
+        $(".lp-boxes .lp-box-overlay").on("click", function() {
+            actual_index = ($(this).parent().find("img").attr('tabindex') - 1);
+            console.log(actual_index);
             var this_parent = $(this).parents(".lp-boxes");
             buildGallery(this_parent,actual_index);
             initSwiper(actual_index);

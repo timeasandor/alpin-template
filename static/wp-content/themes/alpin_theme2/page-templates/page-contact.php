@@ -25,8 +25,9 @@ get_header();
 	<?php get_template_part( 'menu', '' );?>
 	
 	<div class="inner-wrapper">
+		<div id="map"></div>
 		<div class="container middle">
-			<div class="row main_pt100 main_pb75">
+			<div class="row main_pt75 main_pb75">
 				<div class="title">
 					<i class="blicon-wallet"></i>
 					<h1><?php echo $objPost->post_title; ?></h1>
@@ -35,13 +36,13 @@ get_header();
 				<div class="clear"></div>
 			</div>
 		</div>
-		<div id="map"></div>
 		<script>
             function initMap() {
                 var uluru = {lat: 45.764480, lng: 21.214600};
                 var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 14,
-                    center: uluru
+                    zoom: 16,
+                    center: uluru,
+                    mapTypeId: 'satellite'
                 });
                 var marker = new google.maps.Marker({
                     position: uluru,

@@ -51,6 +51,7 @@ if ( $the_query->have_posts() ) : ?>
 							<div class="lp-box box<?php echo $i; ?> ">
 								<div class="lp-box-image lpbox-rnd8">
 									<?php the_post_thumbnail('gallery-single-thumb', array('tabindex'=>$i, 'data-enlarge'=>$image)); ?>
+									<div class="lp-box-overlay"></div>
 								</div>
 								<div class="lp-box-content">
 									<div class="lp-box-text">
